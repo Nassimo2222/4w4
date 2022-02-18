@@ -1,6 +1,14 @@
 @charset "UTF-8";
 /*
-theme name: Exer-1 gr3
+theme name:  Lab4 gr3 Nassim-Olivier gagnon 
+Auteur : Nassim-Olivier Gagnon
+Author URI: https://github.com/Nassimo2222
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cidw-4w4
+
 */
 /* ---------------------------------------------------------
 VARIABLES
@@ -576,13 +584,13 @@ theme name: Lab 2 Lemieux Florence
 .site {
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: "sidebar" "header" "main" "footer";
+  grid-template-areas: "sidebar" "header" "main" "footer";
 }
 
 @media screen and (min-width: 800px) {
   .site {
     grid-template-columns: 300px auto;
-    grid-template-areas: "header header" "sidebar main" "footer footer";
+    grid-template-areas: "header header" "sidebar main" "footer footer";
   }
 }
 /*# sourceMappingURL=style.css.map */
