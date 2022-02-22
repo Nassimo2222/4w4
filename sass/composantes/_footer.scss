@@ -16,7 +16,12 @@
               align-items: center;
               padding : 3px;
               svg { // .site__footer__menu__ul .menu-item a svg
-                color: aqua;
+                color: $color__link__footer;
+              }
+            }
+            &:hover {
+              svg { // .site__footer__menu__ul .menu-item a svg
+                color: $color__link__footer-hover;
               }
             }
           }

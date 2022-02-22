@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name:  Lab4 gr3 Nassim-Olivier gagnon 
+theme name:  groupe__3 Nassim-Olivier Gagnon 
 Auteur : Nassim-Olivier Gagnon
 Author URI: https://github.com/Nassimo2222
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
@@ -16,6 +16,7 @@ VARIABLES
 /* ---------------- BACKGROUND */
 /* ---------------- LIENS */
 /* ---------------- LIENS FOOTER */
+/* ---------------- LIENS HEADER titre principal du site  */
 /* ---------------- FONT */
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
@@ -385,10 +386,30 @@ a:hover, a:active {
   outline: 0;
 }
 
+.header__titre a {
+  color: #891f89;
+}
+
+.header__titre a:visited {
+  color: #e97b20;
+}
+
+.header__titre a:hover, .header__titre a:focus, .header__titre a:active {
+  color: #1a9920;
+}
+
+.header__titre a:focus {
+  outline: thin dotted;
+}
+
+.header__titre a:hover, .header__titre a:active {
+  outline: 0;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
-.principal {
+.site__main {
   margin: 20px;
   padding: 10px 15px;
   background-color: #eca7a7;
@@ -474,6 +495,10 @@ COMPOSANTES
   transform: rotate(0);
 }
 
+#chk-burger {
+  display: none;
+}
+
 #chk-burger:checked ~ #burger {
   transform: rotate(90deg);
 }
@@ -540,7 +565,11 @@ COMPOSANTES
 }
 
 .site__footer__menu__ul .menu-item a svg {
-  color: aqua;
+  color: #f40b0b;
+}
+
+.site__footer__menu__ul .menu-item:hover svg {
+  color: #19e123;
 }
 
 .footer__titre,
@@ -548,6 +577,46 @@ COMPOSANTES
 .footer__author {
   color: #ffcabc;
   text-align: center;
+}
+
+.cours__contenu {
+  display: flex;
+}
+
+/* ---------------------------------------------------------
+ANIMATION
+--------------------------------------------------------- */
+.animation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.animation__bloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #1e8888;
+  color: #fff;
+  font-size: 3rem;
+  animation: anim-entete 1s forwards;
+}
+
+.animation__bloc:hover {
+  background-color: #10e6e6;
+}
+
+@keyframes anim-entete {
+  0% {
+    transform: translateY(-100vh) rotate(-360deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+    opacity: 1;
+  }
 }
 
 /* ---------------------------------------------------------

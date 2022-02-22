@@ -1,5 +1,5 @@
 /*
-theme name:  Lab4 gr3 Nassim-Olivier gagnon 
+theme name:  groupe__3 Nassim-Olivier Gagnon 
 Auteur : Nassim-Olivier Gagnon
 Author URI: https://github.com/Nassimo2222
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
@@ -34,8 +34,15 @@ COMPOSANTES
 @import "composantes/header";
 @import "composantes/navigation";
 @import "composantes/footer";
+@import "composantes/single_cours";
+
+/* ---------------------------------------------------------
+ANIMATION
+--------------------------------------------------------- */
+@import "animation/entete";
 
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
 @import "layout/layout";
+
