@@ -1,6 +1,7 @@
 <footer class="site__footer">
-    <h2 class="footer__titre">Le beau footer</h2>
+    <h2 class="footer__titre">Le MAGNIFIQUE footer!</h2>
     <p class="footer__presentation">Un site web fait par un élève du TIM à l'aide de Wordpress.</p>
+    <p class="footer__presentation">Fait pour l'exercice 2.</p>
     <h3 class="footer__author">Fait par Nassim-Olivier Gagnon</h3>
 
 <?php 
@@ -15,5 +16,5 @@ wp_nav_menu(array(
                     "link_before"=>$icone)); ?>
 </footer>
 </body>
-
+<?php wp_footer(); ?>
 </html>
