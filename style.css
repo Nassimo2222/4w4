@@ -17,6 +17,8 @@ VARIABLES
 /* ---------------- LIENS */
 /* ---------------- LIENS FOOTER */
 /* ---------------- LIENS HEADER titre principal du site  */
+/* ----------------- COULEUR MENU FOOTER -------------- */
+/* ------------------- COULEUR MENU PRINCIPAL -------------- */
 /* ---------------- FONT */
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
@@ -346,16 +348,18 @@ html {
 /* ---------------------------------------------------------
 ÉLÉMENTS
 --------------------------------------------------------- */
+/* --------------------------------------- */
+/* --------------------------------------- */
 a {
-  color: #7b5647;
+  color: #4ccaf0;
 }
 
 a:visited {
-  color: #5c4033;
+  color: #5af04c;
 }
 
 a:hover, a:focus, a:active {
-  color: white;
+  color: #2a8dac;
 }
 
 a:focus {
@@ -406,13 +410,31 @@ a:hover, a:active {
   outline: 0;
 }
 
+/*.site__footer .menu-item a{
+	@include links__menu ( $color__link__footer__menu,
+						   $color__link__footer__menu-visited, 
+						   $color__link__footer__menu-hover 
+						   $background__link__footer__menu,
+						   $background__link__footer__menu-visited, 
+						   $background__link__footer__menu-hover);
+}*/
+/*.menu-principal .menu-item a{
+	@include links__menu ( $color__link__menu__principal,
+						   $color__link__menu__principal-visited, 
+						   $color__link__menu__principal-hover 
+						   $background__link__menu__principal,
+						   $background__link__menu__principal-visited, 
+						   $background__link__menu__principal-hover);
+
+}
+*/
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
 .site__main {
   margin: 20px;
   padding: 10px 15px;
-  background-color: #eca7a7;
+  background-color: #560bad;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
@@ -424,7 +446,7 @@ COMPOSANTES
 
 .formation__titre {
   font-size: 2rem;
-  color: #443936;
+  color: #4ccaf0;
   margin: 10px 0px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
@@ -435,7 +457,7 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #ffd6d1;
+  background-color: #470ca7;
   box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
   margin: 10px;
@@ -459,7 +481,7 @@ COMPOSANTES
 
 .cours__titre {
   font-size: 1.5rem;
-  color: #443936;
+  color: #4ccaf0;
   margin: 5px 0px;
 }
 
@@ -474,8 +496,10 @@ COMPOSANTES
 }
 
 .site__header {
-  background-color: #594036;
-  color: #fa9292;
+  display: flex;
+  align-items: center;
+  background-color: #390ca1;
+  color: #2a8dac;
   padding-left: 10px;
 }
 
@@ -487,6 +511,16 @@ COMPOSANTES
 .site__header .header__desc {
   font-size: 1.5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.util {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.util__lien {
+  display: flex;
 }
 
 #burger {
@@ -526,11 +560,6 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #ffa3a3;
-}
-
-.menu-item a:hover {
-  background-color: #ffd1d1;
 }
 
 @media screen and (min-width: 800px) {
@@ -544,7 +573,7 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #2f2a28;
+  background-color: #4463ee;
   padding: 15px;
 }
 
@@ -581,6 +610,35 @@ COMPOSANTES
 
 .cours__contenu {
   display: flex;
+}
+
+.recherche {
+  position: relative;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.recherche__input {
+  flex: 1;
+  width: 1000%;
+  background-color: rgba(197, 192, 192, 0.5);
+  transition: all .5s;
+  border: none;
+  outline: none;
+  border: 2px solid #af00be;
+}
+
+.recherche__input:focus {
+  background-color: rgba(58, 58, 58, 0.5);
+}
+
+.recherche__bouton {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ---------------------------------------------------------
@@ -626,28 +684,28 @@ LAYOUT
 theme name: Lab 2 Lemieux Florence
 */
 .site {
-  background-color: #957365;
+  background-color: #7309b9;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .site__header {
   grid-area: header;
-  background-color: #594036;
+  background-color: #390ca1;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #ff8585;
+  background-color: #3e37c8;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #eca7a7;
+  background-color: #560bad;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #2f2a28;
+  background-color: #4463ee;
 }
 
 .site {

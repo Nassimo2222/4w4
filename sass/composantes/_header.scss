@@ -1,4 +1,6 @@
 .site__header {
+    display: flex;
+    align-items: center;
     background-color: $color__background-header;
     color: $color__font-header;
     padding-left: 10px;
@@ -10,5 +12,15 @@
     .header__desc {
       font-size: 1.5rem;
       font-family: $font__main;
+    }
+  }
+
+  .util {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+
+    &__lien{
+      display: flex;
     }
   }

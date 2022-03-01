@@ -3,6 +3,8 @@
     <p class="footer__presentation">Un site web fait par un élève du TIM à l'aide de Wordpress.</p>
     <p class="footer__presentation">Fait pour l'exercice 2.</p>
     <h3 class="footer__author">Fait par Nassim-Olivier Gagnon</h3>
+    
+    
 
 <?php 
 
@@ -14,6 +16,8 @@ wp_nav_menu(array(
                     "menu_class"=>"site__footer__menu__ul",
 
                     "link_before"=>$icone)); ?>
+                    <div class="footer__recherche"></div>
+                    <?php get_search_form(); ?>
 </footer>
 </body>
 <?php wp_footer(); ?>

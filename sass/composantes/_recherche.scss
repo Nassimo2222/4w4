@@ -1,0 +1,30 @@
+.recherche {
+    position: relative;
+    display: flex;
+    background-color: rgba(#000, .1);
+
+    &__input{
+        flex: 1;
+        width: 1000%;
+        background-color: rgba(rgb(197, 192, 192), .5);
+        transition: all .5s;
+        border: none;
+        outline: none;
+        border: 2px solid $color__link__menu__principal-hover;
+        &:focus{
+            background-color: rgba(rgb(58, 58, 58), .5);
+        }
+
+    }
+    &__bouton{
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg{
+
+        }
+    }
+}
