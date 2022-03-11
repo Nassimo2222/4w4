@@ -577,35 +577,44 @@ COMPOSANTES
   padding: 15px;
 }
 
-.site__footer__menu__ul {
+.site__footer__colonne {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site__footer__colonne section {
+  flex: 0 0 30%;
+  border: 1px solid #ffcabc;
+}
+
+.site__footer__ligne {
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__menu__nav__ul {
   display: flex;
   list-style-type: none;
   justify-content: center;
 }
 
-.site__footer__menu__ul .menu-item {
+.footer__menu__nav__ul .menu-item {
   margin: 10px 5px;
 }
 
-.site__footer__menu__ul .menu-item a {
+.footer__menu__nav__ul .menu-item a {
   display: flex;
   align-items: center;
   padding: 3px;
 }
 
-.site__footer__menu__ul .menu-item a svg {
+.footer__menu__nav__ul .menu-item a svg {
   color: #f40b0b;
 }
 
-.site__footer__menu__ul .menu-item:hover svg {
+.footer__menu__nav__ul .menu-item:hover svg {
   color: #19e123;
-}
-
-.footer__titre,
-.footer__presentation,
-.footer__author {
-  color: #ffcabc;
-  text-align: center;
 }
 
 .cours__contenu {
@@ -684,13 +693,27 @@ LAYOUT
 theme name: Lab 2 Lemieux Florence
 */
 .site {
-  background-color: #7309b9;
+  background-color: rgba(115, 9, 185, 0.5);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.home::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 174, 0, 0.5);
+  z-index: -1;
+  clip-path: polygon(85% 0, 100% 0, 100% 100%, 52% 100%);
 }
 
 .site__header {
   grid-area: header;
-  background-color: #390ca1;
+  background-color: rgba(57, 12, 161, 0.5);
 }
 
 .site__barre {
@@ -700,7 +723,7 @@ theme name: Lab 2 Lemieux Florence
 
 .site__main {
   grid-area: main;
-  background-color: #560bad;
+  background-color: rgba(86, 11, 173, 0.5);
 }
 
 .site__footer {
