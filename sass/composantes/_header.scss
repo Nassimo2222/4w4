@@ -1,16 +1,30 @@
 .site__header {
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: $color__background-header;
     color: $color__font-header;
     padding-left: 10px;
+    @media screen and (min-width : $largeur__media--tablette){
+      flex-direction: row;
+    }
+    &__titre{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .custom-logo-link, .header__titre, .header__desc {
+      padding: 10px;
+    }
+    .custom-logo-link {
 
+    }
     .header__titre {
-      font-size: 3em;
+      font-size: clamp(3rem, 3vw, 7rem);
       font-family: $font__titre;
     }
     .header__desc {
-      font-size: 1.5rem;
+      font-size: clamp(2rem, 2vw, 4rem);
       font-family: $font__main;
     }
   }
@@ -18,8 +32,14 @@
   .util {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-
+    /*align-items: center;*/
+    padding: 15px;
+    width: 90%;
+    justify-content: center;
+    @media screen and (min-width : $largeur__media--tablette) {
+      margin-left: auto;
+      width: 300px;
+    }
     &__lien{
       display: flex;
     }

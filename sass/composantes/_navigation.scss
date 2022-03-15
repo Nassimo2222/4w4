@@ -19,7 +19,9 @@
 }
 
 
-.menu-principal-container{}
+.menu-principal-container{
+    padding: 30px 0 0 0;
+}
 .menu{
     list-style-type: none;
     margin : 0;
@@ -40,12 +42,22 @@
 }
 
 @media screen and (min-width : $largeur__media--tablette){
-    #burger {
+   /* .site #burger {
         display : none;
+    }*/
+    .site .menu-principal-container {
+        display : block;
+        /*padding: 0; */
+        
     }
-    .menu-principal-container {
+
+    .home #burger {
         display : block;
     }
+    .home .menu-principal-container {
+        display : none;
+    }
+        
 
 }
 
