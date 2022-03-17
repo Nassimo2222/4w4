@@ -615,17 +615,18 @@ COMPOSANTES
 @media screen and (min-width: 800px) {
   .site .menu-principal-container {
     display: block;
-    /*padding: 0; */
-  }
-  .menu-principal-container {
     padding: 0;
   }
-  .home #burger {
+  .site #burger {
     display: none;
   }
-  .home .menu-principal-container {
-    display: block;
-  }
+  /*
+    .home #burger {
+        display : none;
+    }
+    .home .menu-principal-container {
+        display : block;
+    }*/
 }
 
 .site__footer {

@@ -45,22 +45,22 @@
   
     .site .menu-principal-container {
         display : block;
-        /*padding: 0; */
+        padding: 0;
         
     }
 
-    .menu-principal-container{
-        padding: 0;
+    .site #burger {
+        display : none;
     }
 
+    /*
     .home #burger {
         display : none;
     }
     .home .menu-principal-container {
         display : block;
-    }
+    }*/
     
-        
 
 }
 
