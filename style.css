@@ -484,7 +484,8 @@ COMPOSANTES
 }
 
 .formation__cours:hover {
-  transform: scale(1.2);
+  transform: scale(0.97);
+  background-color: #4463ee;
 }
 
 .cours__titre {
