@@ -2,7 +2,7 @@
 /*
 theme name:  groupe__3 Nassim-Olivier Gagnon 
 Auteur : Nassim-Olivier Gagnon
-Author URI: https://github.com/Nassimo2222
+Author URI: https://github.com/Nassimo2222/4w4
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -466,6 +466,8 @@ COMPOSANTES
   flex-direction: row;
   align-items: flex-end;
   width: 100%;
+  transition: transform .3s;
+  transform: scale(1);
   padding: 10px;
 }
 
@@ -479,6 +481,10 @@ COMPOSANTES
   .formation__cours {
     width: 30%;
   }
+}
+
+.formation__cours:hover {
+  transform: scale(1.2);
 }
 
 .cours__titre {
@@ -560,6 +566,7 @@ COMPOSANTES
 
 .util__lien {
   display: flex;
+  justify-content: flex-end;
 }
 
 #burger {
@@ -606,18 +613,18 @@ COMPOSANTES
 }
 
 @media screen and (min-width: 800px) {
-  /* .site #burger {
-        display : none;
-    }*/
   .site .menu-principal-container {
     display: block;
     /*padding: 0; */
   }
+  .menu-principal-container {
+    padding: 0;
+  }
   .home #burger {
-    display: block;
+    display: none;
   }
   .home .menu-principal-container {
-    display: none;
+    display: block;
   }
 }
 
@@ -803,7 +810,7 @@ theme name: Lab 2 Lemieux Florence
     grid-template-areas: "sidebar" "header" "main" "footer";
   }
   .site {
-    grid-template-columns: 300px auto;
+    grid-template-columns: 15vw auto;
     grid-template-areas: "header header" "sidebar main" "footer footer";
   }
 }

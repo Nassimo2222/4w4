@@ -31,6 +31,8 @@
         flex-direction: row;
         align-items: flex-end;
         width: 100%;
+        transition : transform .3s;
+        transform : scale(1);
         @media screen and (min-width : $largeur__media--tablette){
             width: 45%;
         }
@@ -39,6 +41,12 @@
         }
         padding: 10px;
     }
+
+    &__cours:hover {
+        transform: scale(1.2);
+        
+    }
+
 
 
 }

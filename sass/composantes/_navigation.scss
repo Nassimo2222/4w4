@@ -42,21 +42,24 @@
 }
 
 @media screen and (min-width : $largeur__media--tablette){
-   /* .site #burger {
-        display : none;
-    }*/
+  
     .site .menu-principal-container {
         display : block;
         /*padding: 0; */
         
     }
 
-    .home #burger {
-        display : block;
+    .menu-principal-container{
+        padding: 0;
     }
-    .home .menu-principal-container {
+
+    .home #burger {
         display : none;
     }
+    .home .menu-principal-container {
+        display : block;
+    }
+    
         
 
 }
