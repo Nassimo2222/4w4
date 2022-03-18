@@ -18,8 +18,9 @@
     .custom-logo-link, .header__titre, .header__desc {
       padding: 10px;
     }
+    /* Petite animation pour le logo*/
     .custom-logo {
-      animation: anim-logo 10s infinite;
+      animation: anim-logo 6s infinite;
     }
     /* Foont et taille des titres */
     .header__titre {

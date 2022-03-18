@@ -20,6 +20,7 @@ VARIABLES
 /* ----------------- COULEUR MENU FOOTER -------------- */
 /* ------------------- COULEUR MENU PRINCIPAL -------------- */
 /* ---------------- FONT */
+/* Les deux calligraphies principaux du site */
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -417,8 +418,9 @@ a:hover, a:active {
 						   $background__link__footer__menu,
 						   $background__link__footer__menu-visited, 
 						   $background__link__footer__menu-hover);
-}*/
-/*.menu-principal .menu-item a{
+}
+
+.menu-principal .menu-item a{
 	@include links__menu ( $color__link__menu__principal,
 						   $color__link__menu__principal-visited, 
 						   $color__link__menu__principal-hover 
@@ -426,11 +428,11 @@ a:hover, a:active {
 						   $background__link__menu__principal-visited, 
 						   $background__link__menu__principal-hover);
 
-}
-*/
+}*/
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
+/* Fichier pour le site en général, pricipalement pour la page de la liste des cours. */
 .site__main {
   margin: 20px;
   padding: 10px 15px;
@@ -442,6 +444,7 @@ COMPOSANTES
 .formation {
   display: flex;
   flex-direction: column;
+  /* pour chacune des fiches de cours */
 }
 
 .formation__titre {
@@ -468,6 +471,7 @@ COMPOSANTES
   width: 100%;
   transition: transform .3s;
   transform: scale(1);
+  /* On les augmentes et diminues dépendament de la grandeur de l'écran */
   padding: 10px;
 }
 
@@ -489,6 +493,7 @@ COMPOSANTES
   border: 2px solid #ffae00;
 }
 
+/* pour les textes dans les blocs de cours */
 .cours__titre {
   font-size: 1.5rem;
   color: #4ccaf0;
@@ -517,8 +522,10 @@ COMPOSANTES
 
 h1, h2, h3 {
   font-family: "Fredoka", sans-serif;
+  color: white;
 }
 
+/* Fichier dedié au header */
 .site__header {
   display: flex;
   flex-direction: column;
@@ -526,6 +533,9 @@ h1, h2, h3 {
   background-color: #390ca1;
   color: #2a8dac;
   padding-left: 10px;
+  /* Pour le logo */
+  /* Petite animation pour le logo*/
+  /* Foont et taille des titres */
 }
 
 @media screen and (min-width: 800px) {
@@ -544,6 +554,10 @@ h1, h2, h3 {
   padding: 10px;
 }
 
+.site__header .custom-logo {
+  animation: anim-logo 6s infinite;
+}
+
 .site__header .header__titre {
   font-size: clamp(3rem, 3vw, 7rem);
   font-family: "Fredoka", sans-serif;
@@ -554,6 +568,7 @@ h1, h2, h3 {
   font-family: "Work Sans", sans-serif;
 }
 
+/* barre de recherche et icones*/
 .util {
   display: flex;
   flex-direction: column;
@@ -609,6 +624,7 @@ h1, h2, h3 {
   padding: 0;
 }
 
+/* Pour les différentes selections du site */
 .menu-item {
   margin: 0;
   padding: 0;
@@ -619,17 +635,16 @@ h1, h2, h3 {
   text-decoration: none;
   padding: 4px;
   transition: transform .3s;
-  transform: scale(1);
 }
 
 .menu-item a:hover {
   /* IL FAUDRAIT SPÉCIFIER QUE C SEULEMENT POUR LE MENU DU HEADER */
-  transform: scale(1.05);
+  transform: scale(1.05) translateX(8px);
   /* NE MARCHE PAS A RÉPARER */
-  transform: translateX(8px);
   border: 2px solid #ffae00;
 }
 
+/*Pour les items dans le bas du footer */
 @media screen and (min-width: 800px) {
   .menu {
     margin: 0 10px 10px 0;
@@ -654,28 +669,48 @@ h1, h2, h3 {
     }*/
 }
 
+/* Fichier dédi. au footer */
 .site__footer {
   font-family: "Fredoka", sans-serif;
   background-color: #4463ee;
   padding: 15px;
+  /*texte et avis dans le footer */
 }
 
 .site__footer__colonne {
   display: flex;
   justify-content: space-between;
+  /* .footer__article {}
+      .footer__lien {}*/
 }
 
 .site__footer__colonne section {
   flex: 0 0 30%;
-  border: 1px solid #ffcabc;
+  background-color: #3e37c8;
+  border-radius: 10px;
+  padding: 5px;
+  transition: .3s;
+}
+
+.site__footer__colonne section:hover {
+  background-color: #390ca1;
+  border: 3px solid #ffcabc;
+  cursor: pointer;
 }
 
 .site__footer__ligne {
   display: grid;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  /*.footer__auteur {}
+      .footer__description {}
+      .footer__menu {}
+      .footer__recherche {}
+      .footer__copyright {}  */
 }
 
+/* menu du menu */
 .footer__menu__nav__ul {
   display: flex;
   list-style-type: none;
@@ -698,6 +733,33 @@ h1, h2, h3 {
 
 .footer__menu__nav__ul .menu-item:hover svg {
   color: #19e123;
+}
+
+/* Pour les liens/icones dans le footer */
+/* Désolé ! J'étais obligé d'utiliser 
+!important....je sais que ce n'est pas la meilleur idée mais c'étais le seul moyen que ca marchait...*/
+.wp-social-link {
+  margin: 20px 30px 20px 20px !important;
+  transform: scale(1.5);
+  background: #9B51E0 !important;
+}
+
+.wp-social-link:hover {
+  border: 1px solid white;
+}
+
+.wp-block-social-links {
+  background-color: #3e37c8;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: .3s;
+  /* Trucs pour rendre la séléction plus.... elégante :)*/
+}
+
+.wp-block-social-links:hover {
+  background-color: #390ca1;
+  border: 3px solid white;
 }
 
 .cours__contenu {
@@ -757,7 +819,9 @@ ANIMATION
   background-color: #1e8888;
   color: #fff;
   font-size: 3rem;
-  animation: anim-const 5s infinite;
+  animation: anim-entete 5s forwards;
+  /*  A VÉRIEFIER  */
+  animation: anim-const 10s 5s infinite;
 }
 
 .animation__bloc:hover {
@@ -788,21 +852,31 @@ ANIMATION
   }
 }
 
+@keyframes anim-logo {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
 /*
 theme name: Lab 2 Lemieux Florence
 */
+/*Sélecteurs généraux du site */
 .site {
   background-color: rgba(34, 0, 56, 0.5);
   font-family: "Work Sans", sans-serif;
   font-weight: bold;
 }
 
-/*.site > p {
-    font-family: $font__texte;
-}*/
 .home::after {
   content: "";
   position: absolute;

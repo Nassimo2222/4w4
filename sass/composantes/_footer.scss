@@ -9,7 +9,15 @@
       justify-content: space-between;
       section { // .site__footer__colonne section
         flex: 0 0 30%;
-        border: 1px solid $color__font-footer;
+        background-color: $color__background-barre;
+        border-radius: 10px;
+        padding: 5px;
+        transition: .3s;
+          &:hover{
+            background-color: $color__background-header;
+            border: 3px solid $color__font-footer;
+            cursor: pointer;
+          }
       }
       .footer__adresse { //.site__footer__colonne .footer__adresse 
       
@@ -63,13 +71,26 @@
   }
 }
 
-/* Pour les liens/icones dans le footer */ /* NE MARCHE PAS */
+/* Pour les liens/icones dans le footer */ /* Désolé ! J'étais obligé d'utiliser 
+!important....je sais que ce n'est pas la meilleur idée mais c'étais le seul moyen que ca marchait...*/
 .wp-social-link {
-    margin: 8px 30px 5px 8px;
+    margin: 20px 30px 20px 20px !important;
     transform: scale(1.5);
-    background: #9B51E0;
+    background: #9B51E0 !important;
+    &:hover {
+      border: 1px solid white;
+    }
 }
 
 .wp-block-social-links{
-    background-color: cadetblue;
+    background-color: $color__background-barre;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: .3s;
+    /* Trucs pour rendre la séléction plus.... elégante :)*/
+    &:hover {
+      background-color: $color__background-header;
+      border: 3px solid white;
+    }
 }

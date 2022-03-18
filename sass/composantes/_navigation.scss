@@ -42,7 +42,7 @@
         transition : transform .3s;
             
         &:hover { /* IL FAUDRAIT SPÉCIFIER QUE C SEULEMENT POUR LE MENU DU HEADER */
-            transform: scale(2) translateX(8px); /* NE MARCHE PAS A RÉPARER */
+            transform: scale(1.05) translateX(8px); /* NE MARCHE PAS A RÉPARER */
             border : 2px solid $color__background-body-clip;
         }
     }
