@@ -3,7 +3,7 @@
     font-family: $font__titre;
     background-color: $color__background-footer;
     padding: 15px;
-
+  /* Pour les colonnes / widjets*/
     &__colonne { //.site__footer__colonne
       display: flex;
       justify-content: space-between;
@@ -32,14 +32,7 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      section { // 
-
-      }
-      /*.footer__auteur {}
-      .footer__description {}
-      .footer__menu {}
-      .footer__recherche {}
-      .footer__copyright {}  */  
+     
  }
 }
 /* menu du menu */

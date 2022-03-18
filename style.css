@@ -3,7 +3,7 @@
 theme name:  groupe__3 Nassim-Olivier Gagnon 
 Auteur : Nassim-Olivier Gagnon
 Author URI: https://github.com/Nassimo2222/4w4
-Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
+Description: Ce thème sert à la structure du TP1. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -690,6 +690,7 @@ h1, h2, h3 {
   font-family: "Fredoka", sans-serif;
   background-color: #4463ee;
   padding: 15px;
+  /* Pour les colonnes / widjets*/
   /*texte et avis dans le footer */
 }
 
@@ -719,11 +720,6 @@ h1, h2, h3 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  /*.footer__auteur {}
-      .footer__description {}
-      .footer__menu {}
-      .footer__recherche {}
-      .footer__copyright {}  */
 }
 
 /* menu du menu */
