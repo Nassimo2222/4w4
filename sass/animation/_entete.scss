@@ -12,7 +12,7 @@
         background-color: rgb(30, 136, 136);
         color: #fff;
         font-size: 3rem;
-        animation: anim-entete 1s forwards;
+        animation: anim-const 5s infinite;
         &:hover{
             background-color: rgb(16, 230, 230);
             
@@ -31,4 +31,20 @@
         opacity: 1;
 
     }
+}
+
+@keyframes anim-const { /* PROBLEME AVEC MULTIPLES ANIMATIONS */
+
+    0% {
+        transform: rotate(30deg);
+    }
+
+    50% {
+        transform: rotate(-30deg);
+    }
+
+    100% {
+        transform: rotate(30deg);
+    }
+
 }

@@ -13,7 +13,7 @@
     &__titre {
         font-size: 2rem;
         color: $color__font-main;
-        margin: 10px 0px;
+        margin: 0 10px 0 10px;
         font-family: $font__titre;
     }
     &__liste {
@@ -45,16 +45,13 @@
     &__cours:hover {
         transform: scale(0.97);
         background-color: $color__background-footer;
+        border: 2px solid $color__background-body-clip;
         
     }
 
 
 
 }
-
-
-
-
 
 .cours__titre {
     font-size: 1.5rem;
@@ -80,4 +77,8 @@
 
 .cours__texte {
     margin-left: 1rem;
+}
+
+h1, h2, h3 {
+    font-family: $font__titre;
 }

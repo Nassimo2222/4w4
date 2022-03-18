@@ -11,8 +11,11 @@
 #chk-burger:checked ~ #burger {
     transform : rotate(90deg);
 }
+
 .menu-principal-container {
     display : none;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.1rem;
 }
 #chk-burger:checked ~ .menu-principal-container{
     display : block;
@@ -24,8 +27,9 @@
 }
 .menu{
     list-style-type: none;
-    margin : 0;
+    /*margin : 10px 10px 10px 0;*/
     padding :0;
+    
 }
 .menu-item{
     margin:0;
@@ -34,18 +38,30 @@
         display : block;
         text-decoration: none;
         padding : 4px;
-        ;
-        &:hover {
-            
+        transition : transform .3s;
+        transform : scale(1);    
+        &:hover { /* IL FAUDRAIT SPÉCIFIER QUE C SEULEMENT POUR LE MENU DU HEADER */
+            transform: scale(1.05); /* NE MARCHE PAS A RÉPARER */
+            transform: translateX(8px);
+            border : 2px solid $color__background-body-clip;
         }
     }
 }
 
 @media screen and (min-width : $largeur__media--tablette){
-  
+    
+    .menu {
+        margin : 0 10px 10px 0;
+    }
+
+    .menu-item {
+        margin-top: 5px;
+    }
+
     .site .menu-principal-container {
         display : block;
         padding: 0;
+        font-size: 1.1rem;
         
     }
 
