@@ -3,6 +3,8 @@
     position : absolute;
     transition : transform .3s;
     transform : rotate(0);
+    /*Pour déplacer un peu le burger*/
+    top: 289px
 }
 
 #chk-burger {
