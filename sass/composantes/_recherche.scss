@@ -1,3 +1,5 @@
+/*Pour les barres de recherches dans les pages */
+/* Toutes les barres de recherches partagent le même css, juste pas la même grandeur */
 .recherche {
     position: relative;
     display: flex;
@@ -16,6 +18,7 @@
         }
 
     }
+    /* Pour le boutton */
     &__bouton{
         height: 100%;
         position: absolute;
@@ -25,8 +28,5 @@
         align-items: center;
         justify-content: center;
         border: none;
-        svg{
-
-        }
     }
 }

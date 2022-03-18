@@ -30,6 +30,7 @@ mais en plus petite quantité.
 /* ---------------- FONT */
 /* Fonts de couleur... blanche, bleue et oranges parce qu'elles vont bin avec le thème. */
 /* Les deux calligraphies principaux du site */
+/* Je l'ai mis en vw parce que sinon la largeur était très inconsistente*/
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -420,6 +421,10 @@ a:hover, a:active {
   outline: 0;
 }
 
+/*---- Il y a un problème avec le mixin ici.... 
+je ne suis pas sur pourquoi et j'ai essayé plusieurs choses... mais rien. 
+J'ai l'intention de m'améliorer avec les mixins pour nos prochain travaux
+parce que j'ai encore de la difficulté à comprendre ----------*/
 /*.site__footer .menu-item a{
 	@include links__menu ( $color__link__footer__menu,
 						   $color__link__footer__menu-visited, 
@@ -678,7 +683,7 @@ h1, h2, h3 {
     }*/
 }
 
-/* Fichier dédi. au footer */
+/* Fichier dédié au footer */
 .site__footer {
   font-family: "Fredoka", sans-serif;
   background-color: #4463ee;
@@ -747,17 +752,17 @@ h1, h2, h3 {
 /* Pour les liens/icones dans le footer */
 /* Désolé ! J'étais obligé d'utiliser 
 !important....je sais que ce n'est pas la meilleur idée mais c'étais le seul moyen que ca marchait...*/
-.wp-social-link {
+.cidw__icone__sociaux .wp-social-link {
   margin: 20px 30px 20px 20px !important;
   transform: scale(1.5);
-  background: #9B51E0 !important;
+  /*background: #9B51E0 ;*/
 }
 
-.wp-social-link:hover {
+.cidw__icone__sociaux .wp-social-link:hover {
   border: 1px solid white;
 }
 
-.wp-block-social-links {
+.cidw__icone__sociaux {
   background-color: #3e37c8;
   align-items: center;
   justify-content: center;
@@ -766,7 +771,7 @@ h1, h2, h3 {
   /* Trucs pour rendre la séléction plus.... elégante :)*/
 }
 
-.wp-block-social-links:hover {
+.cidw__icone__sociaux:hover {
   background-color: #390ca1;
   border: 3px solid white;
 }
@@ -776,10 +781,13 @@ h1, h2, h3 {
   display: flex;
 }
 
+/*Pour les barres de recherches dans les pages */
+/* Toutes les barres de recherches partagent le même css, juste pas la même grandeur */
 .recherche {
   position: relative;
   display: flex;
   background-color: rgba(0, 0, 0, 0.1);
+  /* Pour le boutton */
 }
 
 .recherche__input {
@@ -807,6 +815,7 @@ h1, h2, h3 {
   border: none;
 }
 
+/*Ce fichier est juste pour le petit tableau sur la page d'accueil....*/
 .montableau td {
   border: 2px solid #44ee85;
 }
@@ -826,42 +835,49 @@ ANIMATION
   width: 100px;
   height: 100px;
   border-radius: 50px;
-  background-color: #1e8888;
   color: #fff;
   font-size: 3rem;
-  animation: anim-entete 5s forwards;
-  /*  A VÉRIEFIER  */
-  animation: anim-const 10s 5s infinite;
+  /*animation: anim-entete 5s forwards;*/
+  /* Je n'ai malheureusement pas inclut l'animation parce que c'était un peu trop compliqué 
+                                            d'en mettre deux en meme temps.... */
+  animation: anim-const 8s infinite;
 }
 
 .animation__bloc:hover {
   background-color: #10e6e6;
 }
 
-@keyframes anim-entete {
-  0% {
-    transform: translateY(-100vh) rotate(-360deg);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0) rotate(0);
-    opacity: 1;
-  }
-}
+/* J'ai décidé de mettre toute mes animations ici parce que je n'ai pas bien compris
+ comment mettre les animations dans le mixin (si c'était possible).*/
+/* ANIMATION NON-UTILISÉ */
+/*@keyframes anim-entete {
+    0% {
+        transform: translateY(-100vh) rotate(-360deg);
+        opacity: 0;
+    }
 
+    100% {
+        transform: translateY(0) rotate(0);
+        opacity: 1;
+
+    }
+}*/
 @keyframes anim-const {
-  /* PROBLEME AVEC MULTIPLES ANIMATIONS */
   0% {
     transform: rotate(30deg);
+    background-color: #1e8888;
   }
   50% {
     transform: rotate(-30deg);
+    background-color: orange;
   }
   100% {
     transform: rotate(30deg);
+    background-color: #1e8888;
   }
 }
 
+/* Petite animation pour le logo */
 @keyframes anim-logo {
   0% {
     transform: scale(1);
@@ -897,6 +913,8 @@ theme name: Lab 2 Lemieux Florence
   left: 0;
   right: 0;
   background-color: rgba(255, 174, 0, 0.5);
+  /*Pour le gros polygone dans le background, j'ai eu quelques problèmes a 
+   l'optimiser mais je pense que ca a bien marché :)*/
   z-index: -1;
   /*clip-path: polygon(85% 0, 100% 0, 100% 100%, 52% 100%);*/
   clip-path: polygon(90% 0, 100% 0%, 100% 100%, 90% 100%, 60% 50%);

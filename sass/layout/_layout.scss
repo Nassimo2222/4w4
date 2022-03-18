@@ -23,7 +23,8 @@ theme name: Lab 2 Lemieux Florence
     right: 0;
     background-color: rgba($color__background-body-clip, .5);
 
-
+   /*Pour le gros polygone dans le background, j'ai eu quelques problèmes a 
+   l'optimiser mais je pense que ca a bien marché :)*/
     z-index: -1;
     /*clip-path: polygon(85% 0, 100% 0, 100% 100%, 52% 100%);*/
     clip-path: polygon(90% 0, 100% 0%, 100% 100%, 90% 100%, 60% 50%);

@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <main class="site__main">
+    <!-- Boucle qui sert a aller chercher le cours que l'utilisateur à choisi et donc le présenter-->
     <?php if (have_posts()): while(have_posts()): the_post(); ?>
         <article class="cours">
             <h1 class="cours__titre">

@@ -1,4 +1,4 @@
-/* Fichier dédi. au footer */
+/* Fichier dédié au footer */
 .site__footer {
     font-family: $font__titre;
     background-color: $color__background-footer;
@@ -73,16 +73,16 @@
 
 /* Pour les liens/icones dans le footer */ /* Désolé ! J'étais obligé d'utiliser 
 !important....je sais que ce n'est pas la meilleur idée mais c'étais le seul moyen que ca marchait...*/
-.wp-social-link {
+.cidw__icone__sociaux   .wp-social-link {
     margin: 20px 30px 20px 20px !important;
     transform: scale(1.5);
-    background: #9B51E0 !important;
+    /*background: #9B51E0 ;*/
     &:hover {
       border: 1px solid white;
     }
 }
 
-.wp-block-social-links{
+.cidw__icone__sociaux  {
     background-color: $color__background-barre;
     align-items: center;
     justify-content: center;
@@ -94,3 +94,4 @@
       border: 3px solid white;
     }
 }
+

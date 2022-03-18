@@ -9,22 +9,23 @@
         width: 100px;
         height: 100px;
         border-radius: 50px;
-        background-color: rgb(30, 136, 136);
         color: #fff;
         font-size: 3rem;
-        animation: anim-entete 5s forwards; /*  A VÉRIEFIER  */
-        animation: anim-const 10s 5s infinite;
+        /*animation: anim-entete 5s forwards;*/ /* Je n'ai malheureusement pas inclut l'animation parce que c'était un peu trop compliqué 
+                                            d'en mettre deux en meme temps.... */
+        animation: anim-const 8s infinite;
         //animation-delay: anim-const 5s;
         &:hover{
-            background-color: rgb(16, 230, 230);
-            
+            background-color: rgb(16, 230, 230);   
         }
     }
 }
 
+/* J'ai décidé de mettre toute mes animations ici parce que je n'ai pas bien compris
+ comment mettre les animations dans le mixin (si c'était possible).*/
 
-
-@keyframes anim-entete {
+ /* ANIMATION NON-UTILISÉ */
+/*@keyframes anim-entete {
     0% {
         transform: translateY(-100vh) rotate(-360deg);
         opacity: 0;
@@ -35,24 +36,30 @@
         opacity: 1;
 
     }
-}
+}*/
 
-@keyframes anim-const { /* PROBLEME AVEC MULTIPLES ANIMATIONS */
+@keyframes anim-const { 
 
     0% {
         transform: rotate(30deg);
+        background-color: rgb(30, 136, 136);
+
     }
 
     50% {
         transform: rotate(-30deg);
+        background-color: orange;
     }
 
     100% {
         transform: rotate(30deg);
+        background-color: rgb(30, 136, 136);
+
     }
 
 }
 
+/* Petite animation pour le logo */
 @keyframes anim-logo {
 
     0% {
