@@ -1,3 +1,4 @@
+/* Fichier dedié au header */
 .site__header {
     display: flex;
     flex-direction: column;
@@ -13,12 +14,14 @@
       justify-content: flex-start;
       align-items: center;
     }
+    /* Pour le logo */
     .custom-logo-link, .header__titre, .header__desc {
       padding: 10px;
     }
-    .custom-logo-link {
-
+    .custom-logo {
+      animation: anim-logo 10s infinite;
     }
+    /* Foont et taille des titres */
     .header__titre {
       font-size: clamp(3rem, 3vw, 7rem);
       font-family: $font__titre;
@@ -28,7 +31,7 @@
       font-family: $font__main;
     }
   }
-
+  /* barre de recherche et icones*/
   .util {
     display: flex;
     flex-direction: column;

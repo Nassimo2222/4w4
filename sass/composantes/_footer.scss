@@ -1,3 +1,4 @@
+/* Fichier dédi. au footer */
 .site__footer {
     font-family: $font__titre;
     background-color: $color__background-footer;
@@ -13,25 +14,27 @@
       .footer__adresse { //.site__footer__colonne .footer__adresse 
       
       }
-      .footer__article {}
-      .footer__lien {}
+     /* .footer__article {}
+      .footer__lien {}*/
     }
 
+    /*texte et avis dans le footer */
     &__ligne { // .site__footer__ligne
       display: grid;
       flex-direction: column;
       align-items: center;
+      text-align: center;
       section { // 
 
       }
-      .footer__auteur {}
+      /*.footer__auteur {}
       .footer__description {}
       .footer__menu {}
       .footer__recherche {}
-      .footer__copyright {}    
+      .footer__copyright {}  */  
  }
 }
-
+/* menu du menu */
 .footer__menu {
 
   &__nav{ // .site__footer__nav
@@ -58,4 +61,15 @@
         }
     }
   }
+}
+
+/* Pour les liens/icones dans le footer */ /* NE MARCHE PAS */
+.wp-social-link {
+    margin: 8px 30px 5px 8px;
+    transform: scale(1.5);
+    background: #9B51E0;
+}
+
+.wp-block-social-links{
+    background-color: cadetblue;
 }

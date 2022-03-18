@@ -12,7 +12,7 @@
         background-color: rgb(30, 136, 136);
         color: #fff;
         font-size: 3rem;
-        animation: anim-const 5s infinite;
+        animation: anim-const 5s infinite; /*  A VÉRIEFIER  */
         &:hover{
             background-color: rgb(16, 230, 230);
             
@@ -47,4 +47,20 @@
         transform: rotate(30deg);
     }
 
+}
+
+@keyframes anim-logo {
+
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(2);
+        box-shadow: 120px 80px 40px 20px rgb(255, 255, 255);    
+    }
+
+    100% {
+        transform: scale(0);
+    }
 }

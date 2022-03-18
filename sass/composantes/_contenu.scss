@@ -21,6 +21,7 @@
         flex-wrap: wrap;
     }
     
+    /* pour chacune des fiches de cours */
     &__cours {
         background-color: $color__background-cours;
         box-shadow: rgb(57, 64, 68) 1px -1px 10px;
@@ -33,6 +34,7 @@
         width: 100%;
         transition : transform .3s;
         transform : scale(1);
+        /* On les augmentes et diminues dépendament de la grandeur de l'écran */
         @media screen and (min-width : $largeur__media--tablette){
             width: 45%;
         }
