@@ -14,12 +14,21 @@ Text Domain: cidw-4w4
 VARIABLES
 --------------------------------------------------------- */
 /* ---------------- BACKGROUND */
+/* ----- La pluspart des couleurs dans le site sont plus bleuté et froide. Je ne sais pas 
+pourquoi....mais je voulais utiliser des couleurs plutôt cOSmIqUES :O */
 /* ---------------- LIENS */
 /* ---------------- LIENS FOOTER */
 /* ---------------- LIENS HEADER titre principal du site  */
+/* Des couleurs plus bleue dans le footer, le mauve est toujours présent cependant.
+
 /* ----------------- COULEUR MENU FOOTER -------------- */
+/* À peu près les même cpuleurs que les backgrounds avec quelques variations....*/
 /* ------------------- COULEUR MENU PRINCIPAL -------------- */
+/* J'ai aussi rajouté des couleurs qui contraste le mieux avec le violet: le jaune orange, donc des couleurs plutot chaudes
+mais en plus petite quantité.
+
 /* ---------------- FONT */
+/* Fonts de couleur... blanche, bleue et oranges parce qu'elles vont bin avec le thème. */
 /* Les deux calligraphies principaux du site */
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
@@ -522,7 +531,6 @@ COMPOSANTES
 
 h1, h2, h3 {
   font-family: "Fredoka", sans-serif;
-  color: white;
 }
 
 /* Fichier dedié au header */
@@ -590,6 +598,7 @@ h1, h2, h3 {
   justify-content: flex-end;
 }
 
+/* Fichier pour les objets de navigation */
 #burger {
   position: absolute;
   transition: transform .3s;
@@ -606,7 +615,7 @@ h1, h2, h3 {
 
 .menu-principal-container {
   display: none;
-  font-family: 'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
   font-size: 1.1rem;
 }
 
@@ -762,6 +771,7 @@ h1, h2, h3 {
   border: 3px solid white;
 }
 
+/* Même si il n'y a pas grend chose ici.... pour les pages seul des cours */
 .cours__contenu {
   display: flex;
 }

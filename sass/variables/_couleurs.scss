@@ -9,6 +9,9 @@ $color__background-footer : hsl(229, 83, 60);
 $color__background-link : hsl(229, 83, 60);
 $color__background-link-hover : hsl(309, 77, 40);
 
+/* ----- La pluspart des couleurs dans le site sont plus bleuté et froide. Je ne sais pas 
+pourquoi....mais je voulais utiliser des couleurs plutôt cOSmIqUES :O */
+
 /* ---------------- LIENS */
 $color__link : hsl(194, 85, 62);
 $color__link-hover : rgb(42, 141, 172);
@@ -24,6 +27,8 @@ $color__link__header : hsl(300, 63%, 33%);
 $color__link__header-hover : hsl(123, 71%, 35%);
 $color__link__header-visited : hsl(27, 82%, 52%);
 
+/* Des couleurs plus bleue dans le footer, le mauve est toujours présent cependant.
+
 /* ----------------- COULEUR MENU FOOTER -------------- */
 $color__link__footer__menu : rgb(128, 193, 255);
 $color__link__footer__menu-visited : rgb(68, 238, 133);
@@ -31,6 +36,8 @@ $color__link__footer__menu-hover : rgb(96, 111, 248);
 $background__link__footer__menu : rgb(114, 184, 250);
 $background__link__footer__menu-visited : rgb(142, 68, 238);
 $background__link__footer__menu-hover : rgb(221, 157, 19);
+
+/* À peu près les même cpuleurs que les backgrounds avec quelques variations....*/
 
 /* ------------------- COULEUR MENU PRINCIPAL -------------- */ 
 $color__link__menu__principal : rgb(234, 0, 255);
@@ -40,8 +47,13 @@ $background__link__menu__principal : rgb(153, 0, 255);
 $background__link__menu__principal-visited : rgb(255, 153, 0);
 $background__link__menu__principal-hover : rgb(148, 0, 161);
 
+/* J'ai aussi rajouté des couleurs qui contraste le mieux avec le violet: le jaune orange, donc des couleurs plutot chaudes
+mais en plus petite quantité.
+
 /* ---------------- FONT */
 $color__font-header : rgb(42, 141, 172);
 $color__font-main :hsl(194, 85, 62);
 $color__font-barre : rgb(255, 255, 255);
 $color__font-footer : rgb(255, 202, 188);
+
+/* Fonts de couleur... blanche, bleue et oranges parce qu'elles vont bin avec le thème. */
