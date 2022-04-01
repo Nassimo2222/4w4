@@ -24,6 +24,8 @@
     
     /* pour chacune des fiches de cours */
     &__cours {
+        background-repeat: no-repeat;
+        background-position: 97% 3%;
         background-color: $color__background-cours;
         box-shadow: rgb(57, 64, 68) 1px -1px 10px;
         border: 2px solid $color__background-link;
@@ -83,7 +85,41 @@
     margin-left: 1rem;
 }
 
-h1, h2, h3 {
-    font-family: $font__titre;
+.web{
+    background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=globe-alt');
+    background-size: 40px 40px;
+}
+.jeu{
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=games');
+    background-size: 40px 40px;
+}
+.comm {
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=users');
+    background-size: 40px 40px;
+}
+.design {
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=color_lens');
+    background-size: 40px 40px;
+    // 3d https://s2.svgbox.net/materialui.svg?ic=view_in_ar
+    // palette peinture https://s2.svgbox.net/materialui.svg?ic=color_lens
+    // image https://s2.svgbox.net/octicons.svg?ic=image
+}
+.utilitaire{
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=tools-bold');
+    background-size: 40px 40px;
+ 
+}
+.video {
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=device-camera-video');
+    background-size: 40px 40px;
+
+    //https://s2.svgbox.net/materialui.svg?ic=movie
+    //camera https://s2.svgbox.net/materialui.svg?ic=voice_chat
+    // camera video https://s2.svgbox.net/octicons.svg?ic=device-camera-video
+    // video https://s2.svgbox.net/materialui.svg?ic=duo
+}
+.creation-3d {
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=view_in_ar');
+    background-size: 40px 40px;
     
 }

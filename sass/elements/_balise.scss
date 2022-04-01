@@ -1,0 +1,37 @@
+h1{
+    font-size: clamp(2rem, 4vw, 5rem);
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2.8rem;
+}
+h4{
+    font-size: 2.3rem;
+}
+h5{
+    font-size: 2rem;
+}
+h6{
+    font-size: 1.5rem;
+}
+p{
+    font-size: 1rem;
+}
+
+h1, h2{
+    font-family: $font__titre_principal;
+}
+
+h3, h4{
+    font-family: $font__titre_secondaire;
+}
+
+h5, h6{
+    font-family: $font__titre_secondaire;
+}
+
+p {
+    font-family: $font_paragraphe;
+}

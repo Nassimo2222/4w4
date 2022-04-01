@@ -3,6 +3,7 @@
 function cidw_4w4_enqueue(){
     //wp_enqueue_style('style_css', get_stylesheet_uri());
     wp_enqueue_style('4w4-le-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), false);
+    // A RAJOUTER LE FONT QUE J'AI MIT DANS LE HEADER ICI !!!!//////////////////////
 }
 
 add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");
@@ -10,8 +11,12 @@ add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");
 /* -------------------------------------------------- Enregistré le menu */
 function cidw_4w4_register_nav_menu(){
     register_nav_menus( array(
+        
         'menu_principal' => __( 'Menu principal', 'cidw_4w4' ),
         'menu_footer'  => __( 'Menu footer', 'cidw_4w4' ),
+        'menu_externe' => __( 'Menu externe', 'cidw_4w4' ),
+        'menu_categorie_cours' => __( 'Menus categorie_cours', 'cidw_4w4' )
+       
     ) );
 }
 add_action( 'after_setup_theme', 'cidw_4w4_register_nav_menu', 0 );

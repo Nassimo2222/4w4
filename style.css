@@ -29,6 +29,8 @@ mais en plus petite quantité.
 
 /* ---------------- FONT */
 /* Fonts de couleur... blanche, bleue et oranges parce qu'elles vont bin avec le thème. */
+/* ------------------- COULEUR BOUTTON MENU-CATEGORIE COURS -------------- */
+/* ------------------- COULEUR TITRE -------------- */
 /* Les deux calligraphies principaux du site */
 /* Je l'ai mis en vw parce que sinon la largeur était très inconsistente*/
 /* ------------------------------------- points de rupture des media queries */
@@ -443,6 +445,50 @@ parce que j'ai encore de la difficulté à comprendre ----------*/
 						   $background__link__menu__principal-hover);
 
 }*/
+h1 {
+  font-size: clamp(2rem, 4vw, 5rem);
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+h4 {
+  font-size: 2.3rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1, h2 {
+  font-family: "Fredoka", sans-serif;
+}
+
+h3, h4 {
+  font-family: "Work Sans", sans-serif;
+}
+
+h5, h6 {
+  font-family: "Work Sans", sans-serif;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -474,6 +520,8 @@ COMPOSANTES
 }
 
 .formation__cours {
+  background-repeat: no-repeat;
+  background-position: 97% 3%;
   background-color: #470ca7;
   box-shadow: #394044 1px -1px 10px;
   border: 2px solid #4463ee;
@@ -534,8 +582,39 @@ COMPOSANTES
   margin-left: 1rem;
 }
 
-h1, h2, h3 {
-  font-family: "Fredoka", sans-serif;
+.web {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=globe-alt");
+  background-size: 40px 40px;
+}
+
+.jeu {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
+  background-size: 40px 40px;
+}
+
+.comm {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=users");
+  background-size: 40px 40px;
+}
+
+.design {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens");
+  background-size: 40px 40px;
+}
+
+.utilitaire {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold");
+  background-size: 40px 40px;
+}
+
+.video {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video");
+  background-size: 40px 40px;
+}
+
+.creation-3d {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar");
+  background-size: 40px 40px;
 }
 
 /* Fichier dedié au header */
@@ -683,6 +762,29 @@ h1, h2, h3 {
     .home .menu-principal-container {
         display : block;
     }*/
+}
+
+.menu-categorie_cours-container .menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu-categorie_cours-container .menu .menu-item {
+  margin: 0 15px;
+  color: #fd9800;
+}
+
+.menu-categorie_cours-container .menu .menu-item a {
+  color: #ea00ff;
+  padding: 5px;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover {
+  color: #fdc200;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover a {
+  color: #8400ff;
 }
 
 /* Fichier dédié au footer */
