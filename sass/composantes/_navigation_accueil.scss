@@ -1,0 +1,40 @@
+.menu-menu_accueil-container { // permet d'acceder le nav
+
+    .menu{ // Permet d'acceder le ul
+        display: flex;
+        justify-content: space-around;
+
+
+        .menu-item{ //li
+            width: 15%;
+            background-color: $color__bouton__background ;
+            a{
+                color: $color__bouton__color;
+                font-size: 1rem;
+                .menu-item-description { // span
+                    
+
+                }
+            }
+        &:hover{
+            background-color: $color__bouton__background--hover;
+            a{
+                color: $color__bouton__color--hover;
+            }
+        }
+        
+        
+        }
+
+
+
+        
+    }
+
+
+
+
+
+
+
+}

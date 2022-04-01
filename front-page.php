@@ -9,6 +9,10 @@
     <div class="animation__bloc">O</div>
     <div class="animation__bloc">!</div>
 </section>
+<?php 
+    wp_nav_menu(array("menu"=>"menu_accueil",
+                        "container"=>"nav"));
+?>
 
     <h1>PAGE PRINCIPALE</h1>
     <?php if (have_posts()): while(have_posts()) : the_post(); ?>
