@@ -6,7 +6,9 @@
 
     .menu-item { // li
         margin: 0 15px;
-        color: $color__bouton__background;
+        //background-color: $color__bouton__color;
+        background-color: $color__bouton__background;
+        border-radius: 10px;
         a{
             color: $color__bouton__color;
             padding: 5px;
@@ -16,6 +18,7 @@
         &:hover{
             color: $color__bouton__background--hover;
             a{
+                border-radius: 10px;
                 color: $color__bouton__color--hover;
             }
         }

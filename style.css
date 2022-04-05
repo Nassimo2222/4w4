@@ -764,26 +764,64 @@ COMPOSANTES
     }*/
 }
 
-.menu-menu_accueil-container .menu {
+.menu-accueil-container .menu {
   display: flex;
   justify-content: space-around;
 }
 
-.menu-menu_accueil-container .menu .menu-item {
-  width: 15%;
-  background-color: #fd9800;
+.menu-accueil-container .menu .accueil__cours .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=book-bold");
 }
 
-.menu-menu_accueil-container .menu .menu-item a {
+.menu-accueil-container .menu .accueil__prof .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=book-bold");
+}
+
+.menu-accueil-container .menu .accueil__aide .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=book-bold");
+}
+
+.menu-accueil-container .menu .accueil__etudiant .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=book-bold");
+}
+
+.menu-accueil-container .menu .menu-item {
+  width: 15%;
+  height: 250px;
+  background-color: #fd9800;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+.menu-accueil-container .menu .menu-item a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   color: #ea00ff;
+  font-size: 1rem;
+  border-radius: 10px;
+  transform-origin: right;
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-description {
   font-size: 1rem;
 }
 
-.menu-menu_accueil-container .menu .menu-item:hover {
+.menu-accueil-container .menu .menu-item a .menu-item-icone {
+  border: 1px solid #aaa;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.menu-accueil-container .menu .menu-item:hover {
   background-color: #fdc200;
 }
 
-.menu-menu_accueil-container .menu .menu-item:hover a {
+.menu-accueil-container .menu .menu-item:hover a {
   color: #8400ff;
 }
 
@@ -794,7 +832,8 @@ COMPOSANTES
 
 .menu-categorie_cours-container .menu .menu-item {
   margin: 0 15px;
-  color: #fd9800;
+  background-color: #fd9800;
+  border-radius: 10px;
 }
 
 .menu-categorie_cours-container .menu .menu-item a {
@@ -807,6 +846,7 @@ COMPOSANTES
 }
 
 .menu-categorie_cours-container .menu .menu-item:hover a {
+  border-radius: 10px;
   color: #8400ff;
 }
 

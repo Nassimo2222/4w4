@@ -26,7 +26,7 @@ add_action( 'after_setup_theme', 'cidw_4w4_register_nav_menu', 0 );
 function prefix_nav_description( $item_output, $item) {
     if ( !empty( $item->description ) ) {
         $item_output = str_replace( '</a>',
-        '<hr><span class="menu-item-description">' . $item->description . '</span>' .  '</a>',
+        '<hr><span class="menu-item-description">' . $item->description . '</span><div class="menu-item-icone"></div></a>',
               $item_output );
     }
     return $item_output;
@@ -128,4 +128,50 @@ function my_register_sidebars() {
     /* Repeat register_sidebar() code for additional sidebars. */
 }
 
+function cidw_4w4_pre_get_posts(WP_Query $query){
+    
+    if(!is_admin() && is_main_query() && is_category('cours','web','jeu','design','utilitaire','creation-3d','video'))
+    {
+
+        /*var_dump($query);
+        die();*/
+        //$ordre = get_query_var('ordre');
+        $ordre = get_query_var('ordre');
+        //echo "---------ordre= " . $ordre . "----------------<br>";
+        $cle = get_query_var('cletri');
+        //echo "---------cletri= " . $cle . "----------------<br>";
+
+        $query->set('order', $ordre);
+        $query->set('orderby', $cle);
+        $query->set('postperpage','-1');
+        /*var_dump($params); die();
+        return $params;*/
+
+    }
+
+   // if(!is_admin() && is_main_query() && is_category(array('web','cours','design','video','utilitaire','creation-3d','jeux)))
+}
+
+function cidw_4w4_query_vars($params){
+ 
+    $params[] = "ordre";
+    $params[] = "cletri";
+return $params;
+}
+        /*var_dump($query);
+        die();
+        $query->set('order', 'asc');
+        $query->set('orderby', 'title');
+        $query->set('postperpage','-1');
+        var_dump($params); die();
+        return $params;
+
+    }*/
+
+
+add_action('pre_get_posts', 'cidw-4w4_pre_get_posts');
+/* Que le hook <<pre_get_posts>> se manifeste juste avant que la requête wp-query soit exécuté. 
+Ce hook nous permettra d'adapter la requête avant d'exécuter cette requête.*/
+
+add_filter('query_vars', 'cidw-4w4_query_vars');
 ?>

@@ -1,19 +1,50 @@
-.menu-menu_accueil-container { // permet d'acceder le nav
+.menu-accueil-container { // permet d'acceder le nav
 
     .menu{ // Permet d'acceder le ul
         display: flex;
         justify-content: space-around;
+        .accueil__cours .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=book-bold");
+        }
+        .accueil__prof .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=book-bold");
+
+        }
+        .accueil__aide .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=book-bold");
+
+        }
+        .accueil__etudiant .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=book-bold");
+
+        }
 
 
         .menu-item{ //li
             width: 15%;
-            background-color: $color__bouton__background ;
+            height: 250px;
+            background-color: $color__bouton__background;
+            border-radius: 10px;
+            margin: 30px;
             a{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
                 color: $color__bouton__color;
                 font-size: 1rem;
+                border-radius: 10px;
+                transform-origin: right;
                 .menu-item-description { // span
-                    
-
+                    font-size: 1rem;
+                }
+                .menu-item-icone {
+                    border: 1px solid #aaa;
+                    width: 2rem;
+                    height: 2rem;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
                 }
             }
         &:hover{
@@ -31,10 +62,4 @@
         
     }
 
-
-
-
-
-
-
-}
+} //.menu-accueil-conteneur
