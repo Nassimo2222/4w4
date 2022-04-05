@@ -130,7 +130,7 @@ function my_register_sidebars() {
 
 function cidw_4w4_pre_get_posts(WP_Query $query){
     
-    if(!is_admin() && is_main_query() && is_category('cours','web','jeu','design','utilitaire','creation-3d','video'))
+    if(!is_admin() && is_main_query() && is_category(array('cours','web','jeu','design','utilitaire','creation-3d','video')))
     {
 
         /*var_dump($query);
@@ -169,9 +169,9 @@ return $params;
     }*/
 
 
-add_action('pre_get_posts', 'cidw-4w4_pre_get_posts');
+add_action('pre_get_posts', 'cidw_4w4_pre_get_posts');
 /* Que le hook <<pre_get_posts>> se manifeste juste avant que la requête wp-query soit exécuté. 
 Ce hook nous permettra d'adapter la requête avant d'exécuter cette requête.*/
 
-add_filter('query_vars', 'cidw-4w4_query_vars');
+add_filter('query_vars', 'cidw_4w4_query_vars');
 ?>
