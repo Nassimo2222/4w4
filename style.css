@@ -773,16 +773,16 @@ COMPOSANTES
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=book-bold");
 }
 
-.menu-accueil-container .menu .accueil__prof .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=book-bold");
+.menu-accueil-container .menu .accueil__bidon .menu-item-icone {
+  background-image: url(https://s2.svgbox.net/octicons.svg?ic=beaker-bold);
 }
 
 .menu-accueil-container .menu .accueil__aide .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=book-bold");
+  background-image: url(https://s2.svgbox.net/octicons.svg?ic=bug-bold);
 }
 
-.menu-accueil-container .menu .accueil__etudiant .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=book-bold");
+.menu-accueil-container .menu .accueil__adresse .menu-item-icone {
+  background-image: url(https://s2.svgbox.net/octicons.svg?ic=archive-bold);
 }
 
 .menu-accueil-container .menu .menu-item {
