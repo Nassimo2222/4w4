@@ -16,11 +16,18 @@
 
     
         &:hover{
-            color: $color__bouton__background--hover;
+            background-color: $color__bouton__background--hover;
             a{
                 border-radius: 10px;
                 color: $color__bouton__color--hover;
             }
+        }
+    }
+    .current-menu-item {
+        background-color: $color__bouton__background--current;
+        border: 3px solid $color__bouton__color--current;
+        a{
+            color: $color__bouton__color--current;
         }
     }
 }

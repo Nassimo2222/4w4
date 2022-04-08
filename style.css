@@ -31,6 +31,7 @@ mais en plus petite quantité.
 /* Fonts de couleur... blanche, bleue et oranges parce qu'elles vont bin avec le thème. */
 /* ------------------- COULEUR BOUTTON MENU-CATEGORIE COURS -------------- */
 /* ------------------- COULEUR TITRE -------------- */
+/* ---------------------- CARTE D'ACCUEIL ------------------------------------------------ */
 /* Les deux calligraphies principaux du site */
 /* Je l'ai mis en vw parce que sinon la largeur était très inconsistente*/
 /* ------------------------------------- points de rupture des media queries */
@@ -764,28 +765,28 @@ COMPOSANTES
     }*/
 }
 
-.menu-accueil-container .menu {
+.menu-accueil-container .menu, .menu-evenement-container .menu {
   display: flex;
   justify-content: space-around;
 }
 
-.menu-accueil-container .menu .accueil__cours .menu-item-icone {
+.menu-accueil-container .menu .accueil__cours .menu-item-icone, .menu-evenement-container .menu .accueil__cours .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=book-bold");
 }
 
-.menu-accueil-container .menu .accueil__bidon .menu-item-icone {
+.menu-accueil-container .menu .accueil__bidon .menu-item-icone, .menu-evenement-container .menu .accueil__bidon .menu-item-icone {
   background-image: url(https://s2.svgbox.net/octicons.svg?ic=beaker-bold);
 }
 
-.menu-accueil-container .menu .accueil__aide .menu-item-icone {
+.menu-accueil-container .menu .accueil__aide .menu-item-icone, .menu-evenement-container .menu .accueil__aide .menu-item-icone {
   background-image: url(https://s2.svgbox.net/octicons.svg?ic=bug-bold);
 }
 
-.menu-accueil-container .menu .accueil__adresse .menu-item-icone {
+.menu-accueil-container .menu .accueil__adresse .menu-item-icone, .menu-evenement-container .menu .accueil__adresse .menu-item-icone {
   background-image: url(https://s2.svgbox.net/octicons.svg?ic=archive-bold);
 }
 
-.menu-accueil-container .menu .menu-item {
+.menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
   width: 15%;
   height: 250px;
   background-color: #fd9800;
@@ -793,7 +794,7 @@ COMPOSANTES
   margin: 30px;
 }
 
-.menu-accueil-container .menu .menu-item a {
+.menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -804,11 +805,11 @@ COMPOSANTES
   transform-origin: right;
 }
 
-.menu-accueil-container .menu .menu-item a .menu-item-description {
+.menu-accueil-container .menu .menu-item a .menu-item-description, .menu-evenement-container .menu .menu-item a .menu-item-description {
   font-size: 1rem;
 }
 
-.menu-accueil-container .menu .menu-item a .menu-item-icone {
+.menu-accueil-container .menu .menu-item a .menu-item-icone, .menu-evenement-container .menu .menu-item a .menu-item-icone {
   border: 1px solid #aaa;
   width: 2rem;
   height: 2rem;
@@ -817,12 +818,16 @@ COMPOSANTES
   background-size: cover;
 }
 
-.menu-accueil-container .menu .menu-item:hover {
+.menu-accueil-container .menu .menu-item:hover, .menu-evenement-container .menu .menu-item:hover {
   background-color: #fdc200;
 }
 
-.menu-accueil-container .menu .menu-item:hover a {
+.menu-accueil-container .menu .menu-item:hover a, .menu-evenement-container .menu .menu-item:hover a {
   color: #8400ff;
+}
+
+.menu-evenement-container .menu-item {
+  background-color: #fd9800;
 }
 
 .menu-categorie_cours-container .menu {
@@ -842,12 +847,21 @@ COMPOSANTES
 }
 
 .menu-categorie_cours-container .menu .menu-item:hover {
-  color: #fdc200;
+  background-color: #fdc200;
 }
 
 .menu-categorie_cours-container .menu .menu-item:hover a {
   border-radius: 10px;
   color: #8400ff;
+}
+
+.menu-categorie_cours-container .menu .current-menu-item {
+  background-color: #bd800f;
+  border: 3px solid #5800aa;
+}
+
+.menu-categorie_cours-container .menu .current-menu-item a {
+  color: #5800aa;
 }
 
 /* Fichier dédié au footer */

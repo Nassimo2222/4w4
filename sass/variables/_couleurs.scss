@@ -63,6 +63,8 @@ $color__bouton__color : rgb(234, 0, 255);
 $color__bouton__background : rgb(253, 152, 0);
 $color__bouton__color--hover : rgb(132, 0, 255);
 $color__bouton__background--hover : rgb(253, 194, 0);
+$color__bouton__color--current : rgb(88, 0, 170);
+$color__bouton__background--current: rgb(189, 128, 15);
 
 /* ------------------- COULEUR TITRE -------------- */ 
 $color__titre_principal : rgb(34, 0, 56);
@@ -70,3 +72,8 @@ $color__titre_secondaire : rgb(73, 0, 122);
 $color__titre_ternaire : rgb(111, 0, 185);
 $color__titre_paragraphe : rgb(152, 2, 251);
 
+/* ---------------------- CARTE D'ACCUEIL ------------------------------------------------ */
+$couleur__carte__evenement: rgb(117, 21, 207);
+$couleur__carte__evenement__background: rgb(207, 188, 21);
+$couleur__carte__evenement--hover: rgb(73, 15, 128);
+$couleur__carte__evenement__background--hover: rgb(145, 125, 11);

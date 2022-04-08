@@ -1,6 +1,11 @@
 <?php get_header() ?>
 <main class="principal">
-    <!--<h1>Les catégories des cours.</h1>-->
+
+    <h1>Les catégories des cours.</h1>
+
+    <a href="?cletri=title&ordre=asc">Ascendant</a>
+    <a href="?cletri=title&ordre=des">Descendant</a><br>
+
     <?php wp_nav_menu(array(
         "menu" => "categorie_cours",
         "container" => "nav"
