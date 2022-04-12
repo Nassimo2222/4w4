@@ -724,19 +724,17 @@ COMPOSANTES
 .menu-item {
   margin: 0;
   padding: 0;
+  transition: transform .3s;
 }
 
 .menu-item a {
   display: block;
   text-decoration: none;
   padding: 4px;
-  transition: transform .3s;
 }
 
-.menu-item a:hover {
-  /* IL FAUDRAIT SPÉCIFIER QUE C SEULEMENT POUR LE MENU DU HEADER */
+.menu-item:hover {
   transform: scale(1.05) translateX(8px);
-  /* NE MARCHE PAS A RÉPARER */
   border: 2px solid #ffae00;
 }
 
@@ -753,6 +751,10 @@ COMPOSANTES
     padding: 0;
     font-size: 1.1rem;
   }
+  .menu-accueil {
+    display: flex;
+    flex-direction: column;
+  }
   .site #burger {
     display: none;
   }
@@ -763,6 +765,11 @@ COMPOSANTES
     .home .menu-principal-container {
         display : block;
     }*/
+}
+
+.menu-accueil-container, .menu-evenement-container {
+  border: 3px solid #ea00ff;
+  border-radius: 20px;
 }
 
 .menu-accueil-container .menu, .menu-evenement-container .menu {
@@ -787,9 +794,8 @@ COMPOSANTES
 }
 
 .menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
-  width: 15%;
-  height: 250px;
-  background-color: #fd9800;
+  width: 20%;
+  height: 20vh;
   border-radius: 10px;
   margin: 30px;
 }
@@ -799,18 +805,16 @@ COMPOSANTES
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  color: #ea00ff;
   font-size: 1rem;
   border-radius: 10px;
   transform-origin: right;
 }
 
 .menu-accueil-container .menu .menu-item a .menu-item-description, .menu-evenement-container .menu .menu-item a .menu-item-description {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .menu-accueil-container .menu .menu-item a .menu-item-icone, .menu-evenement-container .menu .menu-item a .menu-item-icone {
-  border: 1px solid #aaa;
   width: 2rem;
   height: 2rem;
   background-repeat: no-repeat;
@@ -818,16 +822,53 @@ COMPOSANTES
   background-size: cover;
 }
 
-.menu-accueil-container .menu .menu-item:hover, .menu-evenement-container .menu .menu-item:hover {
+.menu-accueil-container .menu-item {
+  background-color: #fd9800;
+}
+
+.menu-accueil-container .menu-item a {
+  color: #ea00ff;
+}
+
+.menu-accueil-container .menu-item a:hover {
+  color: #ea00ff;
+}
+
+.menu-accueil-container .menu-item:hover {
   background-color: #fdc200;
 }
 
-.menu-accueil-container .menu .menu-item:hover a, .menu-evenement-container .menu .menu-item:hover a {
+.menu-accueil-container .menu-item:hover a {
   color: #8400ff;
 }
 
 .menu-evenement-container .menu-item {
-  background-color: #fd9800;
+  background-color: #8baa00;
+}
+
+.menu-evenement-container .menu-item a {
+  color: #7515cf;
+}
+
+.menu-evenement-container .menu-item a:hover {
+  color: #490f80;
+}
+
+.menu-evenement-container .menu-item:hover {
+  background-color: #cfbc15;
+}
+
+.menu-evenement-container .menu-item:hover a {
+  color: #917d0b;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    flex-direction: column;
+  }
+  .menu-item {
+    width: 40%;
+  }
 }
 
 .menu-categorie_cours-container .menu {

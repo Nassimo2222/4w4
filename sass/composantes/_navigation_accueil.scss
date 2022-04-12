@@ -1,5 +1,8 @@
 .menu-accueil-container, .menu-evenement-container { // permet d'acceder le nav
 
+    border: 3px solid $color__bouton__color;
+    border-radius: 20px;
+    
     .menu{ // Permet d'acceder le ul
         display: flex;
         justify-content: space-around;
@@ -21,9 +24,9 @@
 
 
         .menu-item{ //li
-            width: 15%;
-            height: 250px;
-           // background-color: $color__bouton__background;
+            width: 20%;
+            height: 20vh;
+            //background-color: $color__bouton__background;
             border-radius: 10px;
             margin: 30px;
             a{
@@ -32,14 +35,16 @@
                 justify-content: space-between;
                 align-items: center;
                 //color: $color__bouton__color;
+               
                 font-size: 1rem;
                 border-radius: 10px;
                 transform-origin: right;
                 .menu-item-description { // span
-                    font-size: 1rem;
+                    font-size: 0.8rem;
+                    
                 }
                 .menu-item-icone {
-                    border: 1px solid #aaa;
+                    //border: 1px solid #aaa; // Probl`me ici ne s'enleve pas !!!
                     width: 2rem;
                     height: 2rem;
                     background-repeat: no-repeat;
@@ -62,9 +67,9 @@
 
 .menu-accueil-container {
     .menu-item {
-        
+        background-color: $color__bouton__background;
         a{
-            color: $color__bouton__background;
+            color: $color__bouton__color;
             &:hover{
                 color: $color__bouton__color;
             }
@@ -79,9 +84,9 @@
 }
 
 .menu-evenement-container {
-    
-    .menu-item {
         
+    .menu-item {
+        background-color: rgb(139, 170, 0);
         a{
             color: $couleur__carte__evenement;
             &:hover{
@@ -89,10 +94,21 @@
             }
         }
         &:hover{
-            background-color: $color__bouton__evenement__background;
+            background-color: $couleur__carte__evenement__background;
             a{
                 color: $couleur__carte__evenement__background--hover;
             }
         }
+    }
+}
+
+@media screen and (max-width : $largeur__media--tablette){
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu-item {
+        width: 40%;
     }
 }

@@ -38,16 +38,15 @@
 .menu-item{
     margin:0;
     padding : 0;
+    transition : transform .3s;
     a{
         display : block;
         text-decoration: none;
-        padding : 4px;
-        transition : transform .3s;
-            
-        &:hover { /* IL FAUDRAIT SPÉCIFIER QUE C SEULEMENT POUR LE MENU DU HEADER */
-            transform: scale(1.05) translateX(8px); /* NE MARCHE PAS A RÉPARER */
-            border : 2px solid $color__background-body-clip;
-        }
+        padding : 4px; 
+    }
+    &:hover { 
+        transform: scale(1.05) translateX(8px); 
+        border : 2px solid $color__background-body-clip;
     }
 }
 /*Pour les items dans le bas du footer */
@@ -66,9 +65,14 @@
     .site .menu-principal-container {
         display : block;
         padding: 0;
-        font-size: 1.1rem;
-        
+        font-size: 1.1rem;  
     }
+
+    .menu-accueil {
+        display: flex;
+        flex-direction: column;
+    }
+    
 
     .site #burger {
         display : none;
