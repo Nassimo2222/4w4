@@ -797,7 +797,7 @@ COMPOSANTES
   width: 20%;
   height: 20vh;
   border-radius: 10px;
-  margin: 30px;
+  margin: 20px;
 }
 
 .menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a {
@@ -815,6 +815,7 @@ COMPOSANTES
 }
 
 .menu-accueil-container .menu .menu-item a .menu-item-icone, .menu-evenement-container .menu .menu-item a .menu-item-icone {
+  margin: 10px;
   width: 2rem;
   height: 2rem;
   background-repeat: no-repeat;
@@ -1036,6 +1037,22 @@ COMPOSANTES
 /*Ce fichier est juste pour le petit tableau sur la page d'accueil....*/
 .montableau td {
   border: 2px solid #44ee85;
+}
+
+.modal {
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  border: 10px solid #aaa;
+  background-color: aqua;
+  top: 25%;
+  left: 25%;
+  transform: scale(0.1);
+  transition: all 1s ease-in-out;
+}
+
+.modal:hover {
+  transform: scale(1);
 }
 
 /* ---------------------------------------------------------

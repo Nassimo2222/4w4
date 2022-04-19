@@ -12,8 +12,12 @@
     <title>Document</title>
     <?php wp_head() ?>
     <?php show_admin_bar(true); ?>
+    <!--<style>
+        .home::after {
 
-    <!-- FONTS -->
+        }
+    </style>-->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Work+Sans&display=swap" rel="stylesheet">

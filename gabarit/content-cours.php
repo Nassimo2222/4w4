@@ -10,7 +10,8 @@
         $nbHeures = get_field( "nombre_dheures");
         $departement = get_field("departement");
         $sigleCours = substr($titre, 0, 3);
-        $descCours = get_the_excerpt();
+        $descCours = wp_trim_words(get_the_content(), 15, '<button class="cours__desc__suite" href=#> la suite </button>');
+        wp_enqueue_style('style-name', get_stylesheet_uri());
         ?>
         <?php the_post_thumbnail("thumbnail"); ?>
         <div class="cours__texte">

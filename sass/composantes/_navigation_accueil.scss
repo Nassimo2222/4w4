@@ -28,7 +28,7 @@
             height: 20vh;
             //background-color: $color__bouton__background;
             border-radius: 10px;
-            margin: 30px;
+            margin: 20px;
             a{
                 display: flex;
                 flex-direction: column;
@@ -44,7 +44,7 @@
                     
                 }
                 .menu-item-icone {
-                    //border: 1px solid #aaa; // Probl`me ici ne s'enleve pas !!!
+                    margin: 10px;
                     width: 2rem;
                     height: 2rem;
                     background-repeat: no-repeat;
