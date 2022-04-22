@@ -1,4 +1,4 @@
-.modal{
+.boite__modale{
     position: fixed;
     width: 50%;
     height: 50%;
@@ -6,9 +6,11 @@
     background-color: aqua;
     top: 25%;
     left: 25%;
-    transform: scale(0.1);
+    transform: scale(0);
     transition: all 1s ease-in-out;
-    &:hover {
+
+
+    &__ouvrir{
         transform: scale(1);
     }
 
