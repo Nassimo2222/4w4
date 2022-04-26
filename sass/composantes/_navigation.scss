@@ -38,7 +38,7 @@
 .menu-item{
     margin:0;
     padding : 0;
-    transition : transform .3s;
+    transition : transform .5s;
     a{
         display : block;
         text-decoration: none;
@@ -46,7 +46,7 @@
     }
     &:hover { 
         transform: scale(1.05) translateX(8px); 
-        border : 2px solid $color__background-body-clip;
+        border : 5px solid $color__background-body-clip;
     }
 }
 /*Pour les items dans le bas du footer */

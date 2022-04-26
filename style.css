@@ -553,7 +553,7 @@ COMPOSANTES
 .formation__cours:hover {
   transform: scale(0.97);
   background-color: #4463ee;
-  border: 2px solid #ffae00;
+  border: 2px solid #b97f00;
 }
 
 /* pour les textes dans les blocs de cours */
@@ -724,7 +724,7 @@ COMPOSANTES
 .menu-item {
   margin: 0;
   padding: 0;
-  transition: transform .3s;
+  transition: transform .5s;
 }
 
 .menu-item a {
@@ -735,7 +735,7 @@ COMPOSANTES
 
 .menu-item:hover {
   transform: scale(1.05) translateX(8px);
-  border: 2px solid #ffae00;
+  border: 5px solid #b97f00;
 }
 
 /*Pour les items dans le bas du footer */
@@ -1147,7 +1147,7 @@ theme name: Lab 2 Lemieux Florence
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(255, 174, 0, 0.5);
+  background-color: rgba(185, 127, 0, 0.5);
   /*Pour le gros polygone dans le background, j'ai eu quelques problèmes a 
    l'optimiser mais je pense que ca a bien marché :)*/
   z-index: -1;
