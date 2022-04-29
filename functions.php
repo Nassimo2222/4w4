@@ -4,13 +4,17 @@ require_once("options/apparence.php");
 
 function cidw_4w4_enqueue(){
     //wp_enqueue_style('style_css', get_stylesheet_uri());
-    wp_enqueue_style('4w4-le-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), false);
+    wp_enqueue_style('4w4-le-style', 
+                get_template_directory_uri() . '/style.css', 
+                array(), 
+                filemtime(get_template_directory() . '/style.css'), 
+                false);
     // A RAJOUTER LE FONT QUE J'AI MIT DANS LE HEADER ICI !!!!//////////////////////
     //wp_enqueue_style('style-name', get_stylesheet_uri());
      wp_enqueue_script('cidw-4w4-js-modale',
         get_template_directory_uri()  . '/javascript/boite_modale.js',
         array(), 
-        filemtime(get_template_directory_uri()  . '/javascript/boite_modale.js'),
+        filemtime(get_template_directory()  . '/javascript/boite_modale.js'),
         true);
 }
 
