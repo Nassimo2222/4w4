@@ -11,11 +11,26 @@ function cidw_4w4_enqueue(){
                 false);
     // A RAJOUTER LE FONT QUE J'AI MIT DANS LE HEADER ICI !!!!//////////////////////
     //wp_enqueue_style('style-name', get_stylesheet_uri());
-     wp_enqueue_script('cidw-4w4-js-modale',
-        get_template_directory_uri()  . '/javascript/boite_modale.js',
-        array(), 
-        filemtime(get_template_directory()  . '/javascript/boite_modale.js'),
-        true);
+
+    wp_register_script('cidw-4w4-js-modale',
+                get_template_directory_uri()  . '/javascript/boite_modale.js',
+                array(), 
+                filemtime(get_template_directory()  . '/javascript/boite_modale.js'),
+                true);
+
+    wp_register_script('cidw-4w4-js-caroussel',
+                get_template_directory_uri()  . '/javascript/caroussel.js',
+                array(), 
+                filemtime(get_template_directory()  . '/javascript/caroussel.js'),
+                true);
+    
+    if (is_category(['cours', 'web', 'design', 'creation3d', 'utilitaire', 'jeu', 'video'])){
+        wp_enqueue_script('cidw-4w4-js-modale');
+    }
+    if (is_front_page()) {
+        wp_enqueue_script('cidw-4w4-js-caroussel');
+    }
+               
 }
 
 add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");

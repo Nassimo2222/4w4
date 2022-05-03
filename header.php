@@ -12,12 +12,16 @@
     <title>Document</title>
     
     <?php wp_head();?>
-    <?php show_admin_bar(true); ?>
-    <!--<style>
-        .home::after {
-
+    <style>
+        .site__footer {
+            background-color: <?= get_theme_mod('couleur_background_footer') ?>;
         }
-    </style>-->
+
+        .site__header {
+            background-color : <?= get_theme_mod("header_background") ?>;
+        }
+    </style>
+    <?php show_admin_bar(true); ?>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +30,7 @@
 
 </head>
 <body  <?php body_class("site"); ?> style="background-color:<?= get_theme_mod('couleur_background_body'); ?>;" >
-<header class="site__header" style="background-color:<?= get_theme_mod("header_background"); ?>;">
+<header class="site__header">
     <section class="site__header__titre">
         <?php the_custom_logo(); ?>
         <h1 class="header__titre">
