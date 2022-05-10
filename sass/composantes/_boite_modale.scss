@@ -35,20 +35,47 @@
 }
 
 .boite__carrousel{
-    width: 75%;
-    height: 75%;
-    top: 12.5%;
-    left: 12.5%;
-    
-    img {
+    width: 95%;
+    height: 95%;
+    top: 2.5%;
+    left: 2.5%;
+    @media screen and (min-width : $largeur__media--mobile){
+        width: 75%;
+        height: 75%;
+        top: 12.5%;
+        left: 12.5%;
+    }
+
+    &__img {
+
         position: absolute;
         object-fit: cover;
-        bottom: 0;
+        overflow: hidden;
         width: 100%;
         height: 100%;
+        top: 0;
+        left: 0;
 
-       
+        img {
+            position: absolute;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+          //  transform: translateX(-100%);
+            transition: all 1s ease-in-out;
+
+            &.img--ouvrir {
+                opacity: 1;
+               // transform: translateX(0);
+            }
+    
+           
+        }
     }
+    
 
     &__navigation {
         position: absolute;
@@ -59,7 +86,7 @@
         border: 1ps solid red;
         z-index: 1;
 
-        button{
+        .bouton{
             margin: 5px;
             width: 55px;
             height: 30px;
