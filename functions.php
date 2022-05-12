@@ -1,5 +1,5 @@
 <?php 
-
+// Ce fichier php est utilisé pour la plupart des fonctions dans le site
 require_once("options/apparence.php");
 
 function cidw_4w4_enqueue(){

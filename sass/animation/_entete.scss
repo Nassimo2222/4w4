@@ -1,3 +1,4 @@
+/*CSS de l'entete et endroit principal pour toute les animations du site...*/
 .animation{
     display: flex;
     justify-content: space-between;
@@ -11,8 +12,7 @@
         border-radius: 50px;
         color: #fff;
         font-size: 3rem;
-        /*animation: anim-entete 5s forwards;*/ /* Je n'ai malheureusement pas inclut l'animation parce que c'était un peu trop compliqué 
-                                            d'en mettre deux en meme temps.... */
+        
         animation: anim-const 8s infinite;
         //animation-delay: anim-const 5s;
         &:hover{

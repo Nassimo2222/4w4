@@ -1,7 +1,7 @@
 <?php get_header() ?>
 <main class="site__main">
 
-<!-- <section class="animation">
+<!-- Sphères d'animations plus utlisé <section class="animation">
     <div class="animation__bloc">H</div>
     <div class="animation__bloc">E</div>
     <div class="animation__bloc">L</div>

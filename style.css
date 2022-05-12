@@ -446,6 +446,7 @@ parce que j'ai encore de la difficulté à comprendre ----------*/
 						   $background__link__menu__principal-hover);
 
 }*/
+/* CSS Princial pour la grandeur du texte*/
 h1 {
   font-size: clamp(2rem, 4vw, 5rem);
 }
@@ -558,15 +559,26 @@ COMPOSANTES
 
 /* pour les textes dans les blocs de cours */
 .cours__titre {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #4ccaf0;
   margin: 5px 0px;
 }
 
+@media screen and (min-width: 1100px) {
+  .cours__titre {
+    font-size: 1.5rem;
+  }
+}
+
 .cours__sigle {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #8a5353;
-  margin: 0;
+  margin: 3px;
+}
+
+.cours__nbre-heure {
+  font-size: 1rem;
+  margin: 3px;
 }
 
 .cours__desc {
@@ -1032,6 +1044,7 @@ COMPOSANTES
   border: 2px solid #44ee85;
 }
 
+/*CSS principal de la boite modale et du carrousel*/
 .boite__modale, .boite__carrousel {
   position: fixed;
   width: 50%;
@@ -1069,6 +1082,7 @@ COMPOSANTES
   height: 95%;
   top: 2.5%;
   left: 2.5%;
+  /*Pour les images dans le carrousel*/
 }
 
 @media screen and (min-width: 500px) {
@@ -1123,6 +1137,8 @@ COMPOSANTES
   background-color: #c015c0;
   border: 2px solid #3e37c8;
   transition: all 0.2s ease-in;
+  /* Quand on a cliqué sur un des boutons...*/
+  /* Quand on passe sur un des boutons*/
 }
 
 .boite__carrousel__navigation .bouton:focus {
@@ -1153,6 +1169,7 @@ Galerie gutenberg de la page d'accueil
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
+/*CSS de l'entete et endroit principal pour toute les animations du site...*/
 .animation {
   display: flex;
   justify-content: space-between;
@@ -1167,9 +1184,6 @@ ANIMATION
   border-radius: 50px;
   color: #fff;
   font-size: 3rem;
-  /*animation: anim-entete 5s forwards;*/
-  /* Je n'ai malheureusement pas inclut l'animation parce que c'était un peu trop compliqué 
-                                            d'en mettre deux en meme temps.... */
   animation: anim-const 8s infinite;
 }
 
@@ -1220,7 +1234,9 @@ ANIMATION
   }
 }
 
+/*Ce fichier est dédié aux animations/css pour le burger*/
 .burger {
+  /*css principale pour le burger*/
   margin: 10px;
   width: 4rem;
   height: 4rem;
@@ -1238,6 +1254,7 @@ ANIMATION
   left: 0;
   background-color: aliceblue;
   transition: all 0.3s ease-in-out;
+  /*Les trois languettes du burger*/
 }
 
 .burger .burger__ligne:nth-of-type(1) {
@@ -1252,10 +1269,12 @@ ANIMATION
   clip-path: polygon(0 80%, 100% 80%, 100% 100%, 0 100%);
 }
 
+/*Quand on clique sur le burger...*/
 #chk-burger:checked ~ #burger {
   /*.burger {
         background-color: purple;
     }*/
+  /*Animations des languettes en "X"*/
 }
 
 #chk-burger:checked ~ #burger .burger__ligne {

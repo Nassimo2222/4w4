@@ -1,3 +1,4 @@
+// Fonction qui fait marcher la boite modale
 (function(){
 
     console.log('vive Javascript');

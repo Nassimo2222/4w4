@@ -1,3 +1,4 @@
+/*CSS principal de la boite modale et du carrousel*/
 .boite__modale, .boite__carrousel{
     position: fixed;
     width: 50%;
@@ -45,7 +46,7 @@
         top: 12.5%;
         left: 12.5%;
     }
-
+    /*Pour les images dans le carrousel*/
     &__img {
 
         position: absolute;
@@ -94,10 +95,11 @@
             background-color: rgb(192, 21, 192);
             border: 2px solid rgb(62,55,200);
             transition: all 0.2s ease-in;
-
+            /* Quand on a cliqué sur un des boutons...*/
             &:focus{
                 background-color: rgb(62,55,200);
             }
+            /* Quand on passe sur un des boutons*/
             &:hover {
                 transform: translateY(-10px) scale(1.1);
             }

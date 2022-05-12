@@ -60,15 +60,23 @@
 /* pour les textes dans les blocs de cours */
 
 .cours__titre {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: $color__font-main;
     margin: 5px 0px;
+    @media screen and (min-width : $largeur__media--desktop) {
+        font-size: 1.5rem;
+    }
 }
 
 .cours__sigle {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: rgb(138, 83, 83);
-    margin: 0;
+    margin: 3px;
+}
+
+.cours__nbre-heure {
+    font-size: 1rem;
+    margin: 3px;
 }
 
 .cours__desc {
