@@ -1,7 +1,7 @@
 /* Fichier pour les objets de navigation */
 #burger {
     position : absolute;
-    
+    transform: translateY(-125px);
     /*Pour déplacer un peu le burger*/
     
 }
@@ -37,6 +37,7 @@
     margin:0;
     padding : 0;
     transition : transform .5s;
+    transform-origin: left;
     a{
         display : block;
         text-decoration: none;

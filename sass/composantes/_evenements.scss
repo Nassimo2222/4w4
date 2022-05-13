@@ -1,0 +1,54 @@
+/* fichier dédié au template d'évenement*/
+.evn__img, .evn__loc ,.evn__res ,.evn__org {
+    background-color: #2f0080;
+    border-radius: 10px;
+    margin: 5px;
+    color: white;
+    
+
+    h4 {
+        background-color: #3e37c8;
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+    p {
+        background-color: #625f97;
+        border-radius: 10px;
+        margin: 10px;
+    }
+}
+.evn__img > img {
+    margin: 15px;
+    border-radius: 10px;
+    border: 5px solid rgb(108,24,200);
+    
+}
+
+.evn__img {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width : $largeur__media--desktop){
+        flex-direction: row;
+    }
+}
+
+.evn__txt {
+    background-color: #625f97;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.evn__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @media screen and (min-width : $largeur__media--desktop--two){
+        flex-direction: row;
+    }
+    
+}
+
+.site__main > h1 {
+    color: white;
+}
