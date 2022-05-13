@@ -32,7 +32,7 @@
         border-radius: 5px;
         margin: 10px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: flex-end;
         width: 100%;
         transition : transform .3s;
@@ -91,6 +91,16 @@
 
 .cours__texte {
     margin-left: 1rem;
+}
+
+.cours__info {
+    display: flex;
+}
+
+.cours__main__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .web{

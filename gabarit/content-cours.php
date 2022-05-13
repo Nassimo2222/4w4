@@ -14,16 +14,21 @@
         wp_enqueue_style('style-name', get_stylesheet_uri());
         ?>
         <code class="cours__desc__complet" style="display:none"><?= $descCours; ?></code>
-        <?php the_post_thumbnail("thumbnail"); ?>
- 
+        <div class="cours__main__content">
+                    <?php the_post_thumbnail("thumbnail"); ?>
+            
             <h3 class="cours__titre"> 
                 <a href="<?php echo get_permalink(); ?>">
                     <?= $titreFiltreCours; ?>
                 </a>
             </h3>
-        <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
-        <p class="cours__sigle"><?= $sigleCours; ?> </p>
-        <p class="cours__desc"> <?= wp_trim_words($descCours, 15, '<button class="cours__desc__suite" href=#> la suite </button>'); ?></p>
-        <p class="cours__dep"><?= $departement; ?></p>
+            <div class="cours__info">
+            <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
+            <p class="cours__sigle"><?= $sigleCours; ?> </p>
+            </div>
+            <p class="cours__desc"> <?= wp_trim_words($descCours, 15, '<button class="cours__desc__suite" href=#> la suite </button>'); ?></p>
+            <p class="cours__dep"><?= $departement; ?></p>
+        </div>
+        
 
 </article>

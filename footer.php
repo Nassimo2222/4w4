@@ -14,11 +14,13 @@
         <section class="footer__description">
         <?php get_sidebar("footer_ligne_2"); ?>
         </section>
-        <section class="footer__copyright">
-        <?php get_sidebar("footer_ligne_1"); ?>
-        </section>
-        <section class="footer__auteur">
-            <p>Auteur : Nassim-Olivier Gagnon</p>
+        <section class="owner">
+            <section class="footer__copyright">
+            <?php get_sidebar("footer_ligne_1"); ?>
+            </section>
+            <section class="footer__auteur">
+                <p>Auteur : Nassim-Olivier Gagnon</p>
+            </section>
         </section>
         <section class="footer__menu">
         <?php    

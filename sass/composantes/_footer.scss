@@ -6,7 +6,9 @@
   /* Pour les colonnes / widjets*/
     &__colonne { //.site__footer__colonne
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
+      
       section { // .site__footer__colonne section
         flex: 0 0 30%;
         background-color: $color__background-barre;
@@ -19,11 +21,20 @@
             cursor: pointer;
           }
       }
-      .footer__adresse { //.site__footer__colonne .footer__adresse 
-      
+      .footer__article, .footer__lien, .footer__adresse {
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        @media screen and (min-width : $largeur__media--tablette){
+          margin-top: 0;
+          margin-bottom: 0;
+        }
       }
-     /* .footer__article {}
-      .footer__lien {}*/
+      
+      @media screen and (min-width : $largeur__media--tablette){
+        flex-direction: row;
+      
+    }
     }
 
     /*texte et avis dans le footer */
@@ -37,6 +48,10 @@
 }
 /* menu du menu */
 .footer__menu {
+    background-color: #2f0080;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 
   &__nav{ // .site__footer__nav
 
@@ -62,6 +77,31 @@
         }
     }
   }
+}
+/* autres partie du footer (desc, auteur, copyright...)*/
+.footer__description {
+  background-color: #2f0080;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+#block-14 {
+  margin: 10px;
+}
+
+#block-16 {
+  color: white;
+}
+
+.owner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color:#2f0080;
+  color: white;
+  border-radius: 10px;
+
 }
 
 /* Pour les liens/icones dans le footer */ /* Désolé ! J'étais obligé d'utiliser 
