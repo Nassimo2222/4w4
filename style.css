@@ -31,7 +31,8 @@ mais en plus petite quantité.
 /* Fonts de couleur... blanche, bleue et oranges parce qu'elles vont bin avec le thème. */
 /* ------------------- COULEUR BOUTTON MENU-CATEGORIE COURS -------------- */
 /* ------------------- COULEUR TITRE -------------- */
-/* ---------------------- CARTE D'ACCUEIL ------------------------------------------------ */
+/* ---------------------- CARTE D'ACCUEIL EVENEMENT ------------------------------------------------ */
+/* ---------------------- CARTE D'ACCUEIL ATELIER ----------------------------- */
 /* Les deux calligraphies principaux du site */
 /* Je l'ai mis en vw parce que sinon la largeur était très inconsistente*/
 /* ------------------------------------- points de rupture des media queries */
@@ -784,40 +785,58 @@ COMPOSANTES
     }*/
 }
 
-.menu-accueil-container, .menu-evenement-container {
+.menu-accueil-container, .menu-evenement-container, .menu-atelier-container {
   border: 3px solid #ea00ff;
   border-radius: 20px;
 }
 
-.menu-accueil-container .menu, .menu-evenement-container .menu {
+.menu-accueil-container .menu, .menu-evenement-container .menu, .menu-atelier-container .menu {
   display: flex;
   justify-content: space-around;
 }
 
-.menu-accueil-container .menu .accueil__cours .menu-item-icone, .menu-evenement-container .menu .accueil__cours .menu-item-icone {
+.menu-accueil-container .menu .accueil__cours .menu-item-icone, .menu-evenement-container .menu .accueil__cours .menu-item-icone, .menu-atelier-container .menu .accueil__cours .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=book-bold");
 }
 
-.menu-accueil-container .menu .accueil__bidon .menu-item-icone, .menu-evenement-container .menu .accueil__bidon .menu-item-icone {
+.menu-accueil-container .menu .accueil__bidon .menu-item-icone, .menu-evenement-container .menu .accueil__bidon .menu-item-icone, .menu-atelier-container .menu .accueil__bidon .menu-item-icone {
   background-image: url(https://s2.svgbox.net/octicons.svg?ic=beaker-bold);
 }
 
-.menu-accueil-container .menu .accueil__aide .menu-item-icone, .menu-evenement-container .menu .accueil__aide .menu-item-icone {
+.menu-accueil-container .menu .accueil__aide .menu-item-icone, .menu-evenement-container .menu .accueil__aide .menu-item-icone, .menu-atelier-container .menu .accueil__aide .menu-item-icone {
   background-image: url(https://s2.svgbox.net/octicons.svg?ic=bug-bold);
 }
 
-.menu-accueil-container .menu .accueil__adresse .menu-item-icone, .menu-evenement-container .menu .accueil__adresse .menu-item-icone {
+.menu-accueil-container .menu .accueil__adresse .menu-item-icone, .menu-evenement-container .menu .accueil__adresse .menu-item-icone, .menu-atelier-container .menu .accueil__adresse .menu-item-icone {
   background-image: url(https://s2.svgbox.net/octicons.svg?ic=archive-bold);
 }
 
-.menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
+.menu-accueil-container .menu .atelier__Htmlcss .menu-item-icone, .menu-evenement-container .menu .atelier__Htmlcss .menu-item-icone, .menu-atelier-container .menu .atelier__Htmlcss .menu-item-icone {
+  background-image: url(https://s2.svgbox.net/files.svg?ic=html);
+}
+
+.menu-accueil-container .menu .atelier__Git .menu-item-icone, .menu-evenement-container .menu .atelier__Git .menu-item-icone, .menu-atelier-container .menu .atelier__Git .menu-item-icone {
+  background-image: url(https://s2.svgbox.net/files.svg?ic=git);
+}
+
+.menu-accueil-container .menu .atelier__React .menu-item-icone, .menu-evenement-container .menu .atelier__React .menu-item-icone, .menu-atelier-container .menu .atelier__React .menu-item-icone {
+  background-image: url(https://s2.svgbox.net/files.svg?ic=reactjs);
+}
+
+.menu-accueil-container .menu .atelier__Avance .menu-item-icone, .menu-evenement-container .menu .atelier__Avance .menu-item-icone, .menu-atelier-container .menu .atelier__Avance .menu-item-icone {
+  background-image: url(https://s2.svgbox.net/files.svg?ic=css);
+}
+
+.menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item, .menu-atelier-container .menu .menu-item {
   width: 92%;
   height: 20vh;
   border-radius: 10px;
   margin: 20px;
+  transform-origin: center;
 }
 
-.menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a {
+.menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a, .menu-atelier-container .menu .menu-item a {
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -827,11 +846,11 @@ COMPOSANTES
   transform-origin: right;
 }
 
-.menu-accueil-container .menu .menu-item a .menu-item-description, .menu-evenement-container .menu .menu-item a .menu-item-description {
+.menu-accueil-container .menu .menu-item a .menu-item-description, .menu-evenement-container .menu .menu-item a .menu-item-description, .menu-atelier-container .menu .menu-item a .menu-item-description {
   font-size: 0.8rem;
 }
 
-.menu-accueil-container .menu .menu-item a .menu-item-icone, .menu-evenement-container .menu .menu-item a .menu-item-icone {
+.menu-accueil-container .menu .menu-item a .menu-item-icone, .menu-evenement-container .menu .menu-item a .menu-item-icone, .menu-atelier-container .menu .menu-item a .menu-item-icone {
   margin: 10px;
   width: 3rem;
   height: 3rem;
@@ -840,7 +859,7 @@ COMPOSANTES
   background-size: cover;
 }
 
-.menu-accueil-container .menu .menu-item a .menu-item-icone:hover, .menu-evenement-container .menu .menu-item a .menu-item-icone:hover {
+.menu-accueil-container .menu .menu-item a .menu-item-icone:hover, .menu-evenement-container .menu .menu-item a .menu-item-icone:hover, .menu-atelier-container .menu .menu-item a .menu-item-icone:hover {
   animation: anim-icone 6s infinite;
 }
 
@@ -882,6 +901,26 @@ COMPOSANTES
 
 .menu-evenement-container .menu-item:hover a {
   color: #917d0b;
+}
+
+.menu-atelier-container .menu-item {
+  background-color: #c315ac;
+}
+
+.menu-atelier-container .menu-item a {
+  color: #97cbf5;
+}
+
+.menu-atelier-container .menu-item a:hover {
+  color: #4383ad;
+}
+
+.menu-atelier-container .menu-item:hover {
+  background-color: #ff4343;
+}
+
+.menu-atelier-container .menu-item:hover a {
+  color: #901414;
 }
 
 @media screen and (max-width: 800px) {

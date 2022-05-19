@@ -72,8 +72,14 @@ $color__titre_secondaire : rgb(73, 0, 122);
 $color__titre_ternaire : rgb(111, 0, 185);
 $color__titre_paragraphe : rgb(152, 2, 251);
 
-/* ---------------------- CARTE D'ACCUEIL ------------------------------------------------ */
+/* ---------------------- CARTE D'ACCUEIL EVENEMENT ------------------------------------------------ */
 $couleur__carte__evenement: rgb(117, 21, 207);
 $couleur__carte__evenement__background: rgb(207, 188, 21);
 $couleur__carte__evenement--hover: rgb(73, 15, 128);
 $couleur__carte__evenement__background--hover: rgb(145, 125, 11);
+
+/* ---------------------- CARTE D'ACCUEIL ATELIER ----------------------------- */
+$couleur__carte__atelier: rgb(151, 203, 245);
+$couleur__carte__atelier__background: rgb(255, 67, 67);
+$couleur__carte__atelier--hover: rgb(67, 131, 173);
+$couleur__carte__atelier__background--hover: rgb(144, 20, 20);
