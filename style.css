@@ -916,11 +916,11 @@ COMPOSANTES
 }
 
 .menu-atelier-container .menu-item:hover {
-  background-color: #ff4343;
+  background-color: #d3ff43;
 }
 
 .menu-atelier-container .menu-item:hover a {
-  color: #901414;
+  color: #799014;
 }
 
 @media screen and (max-width: 800px) {
