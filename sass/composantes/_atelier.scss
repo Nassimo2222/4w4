@@ -1,8 +1,12 @@
 .at {
     color: rgb(0, 195, 255);
     font-style: italic;
+    margin-left: 7px;
+    font-size: 2rem;
 }
 
-.at__content > h3, h4 {
+.at__content > span {
     display: flex;
+    margin-top : 3px;
+    font-size: 1.5rem;
 }

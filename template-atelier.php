@@ -7,15 +7,15 @@
     <?php the_post_thumbnail(); ?>
         <section class="at__content">
             <h2> Description de l'atelier</h2>
-            <h4>L'animateur de l'atelier : <h4 class="at"><?php the_field('animateur'); ?></h4></h4>
-            <h4>L'atelier sera donné au local : <h4 class="at"><?php the_field('local'); ?></ph4></h4>
+            <span>L'animateur de l'atelier : <span class="at"><?php the_field('animateur'); ?></span></span>
+            <span>L'atelier sera donné au local : <span class="at"><?php the_field('local'); ?></span></span>
             <p><?php the_field('description_de_latelier'); ?></p>
             <h2>Horaire et dates de l'atelier</h2>
-            <h4>Durée de chacune des scéances est de <h4 class="at"><?php the_field('les_journes_de_latelier')?></h4></h4>
-            <h4>Date de début : <h4 class="at"><?php the_field('date_de_debut')?></h4></h4>
-            <h4>Date de fin : <h4 class="at"><?php the_field('date_de_fin')?></h4></h4>
-            <h4>La formation se donnera de <h4 class="at"><?php the_field('duree')?> heures.</h4></h4>
-            <h4>L'horaire : de <h4 class="at"><?php the_field('heure_de_debut')?></h4> à <h4 class="at"><?php the_field('heure_de_fin')?></h4></h4>
+            <span>Durée de chacune des scéances est de <span class="at"><?php the_field('duree')?> heures.</span></span>
+            <span>Date de début : <span class="at"><?php the_field('date_de_debut')?></span></span>
+            <span>Date de fin : <span class="at"><?php the_field('date_de_fin')?></span></span>
+            <span>La formation se donnera de <span class="at"><?php the_field('les_journees_de_latelier')?> </span></span>
+            <span>L'horaire : de <span class="at"><?php the_field('heure_de_debut')?></span> à <span class="at"><?php the_field('heure_de_fin')?></span></span>
         </section>
         
         

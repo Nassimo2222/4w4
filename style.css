@@ -3,7 +3,7 @@
 theme name:  groupe__3 Nassim-Olivier Gagnon 
 Auteur : Nassim-Olivier Gagnon
 Author URI: https://github.com/Nassimo2222/4w4
-Description: Ce thème sert à la structure du TP2. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
+Description: Ce thème sert à la structure de l'épreuve finale. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -1334,10 +1334,14 @@ Galerie gutenberg de la page d'accueil
 .at {
   color: #00c3ff;
   font-style: italic;
+  margin-left: 7px;
+  font-size: 2rem;
 }
 
-.at__content > h3, h4 {
+.at__content > span {
   display: flex;
+  margin-top: 3px;
+  font-size: 1.5rem;
 }
 
 /* ---------------------------------------------------------
