@@ -903,6 +903,7 @@ COMPOSANTES
   color: #917d0b;
 }
 
+/* Pour le menu atelier (EPREUVE FINALE)*/
 .menu-atelier-container .menu-item {
   background-color: #c315ac;
 }
@@ -1328,6 +1329,15 @@ Galerie gutenberg de la page d'accueil
 
 .site__main > h1 {
   color: white;
+}
+
+.at {
+  color: #00c3ff;
+  font-style: italic;
+}
+
+.at__content > h3, h4 {
+  display: flex;
 }
 
 /* ---------------------------------------------------------
