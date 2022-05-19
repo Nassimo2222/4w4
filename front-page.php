@@ -24,6 +24,15 @@
                             "container"=>"nav")); 
 ?>
 
+<h2>Les prochain ateliers</h2>
+
+<?php 
+    wp_nav_menu(array("menu"=>"atelier",
+                            "container"=>"nav")); 
+?>
+
+
+
     
     <?php if (have_posts()): /*while(have_posts()) :*/ the_post(); ?>
         <?php the_title() ?>
